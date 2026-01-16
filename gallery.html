@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Галерея - BMW E34</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<!-- Шапка -->
+<header class="main-header">
+  <div class="logo">
+    <a href="index.html">
+      <span class="logo-bmw">BMW</span>
+      <span class="logo-model">E34</span>
+      <span class="logo-years">Галерея</span>
+    </a>
+  </div>
+  <nav class="main-nav">
+    <ul>
+      <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+      <li><a href="gallery.html" class="active"><i class="fas fa-images"></i> Галерея</a></li>
+      <li><a href="info.html"><i class="fas fa-info-circle"></i> История</a></li>
+      <li><a href="buy.html"><i class="fas fa-shopping-cart"></i> Купить</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Основной контент -->
+<main class="gallery-page">
+  <section class="page-header">
+    <h1><span class="highlight">Галерея</span> BMW E34</h1>
+    <p class="page-subtitle">Винтажные фотографии сохранившихся экземпляров со всего мира</p>
+  </section>
+
+  <!-- Сетка галереи -->
+  <section class="gallery-grid">
+    <!-- Изображение 1 -->
+    <div class="gallery-item exterior" data-category="exterior">
+      <div class="gallery-image dusty" style="background-image: url('images/gallery1.jpg');">
+        <div class="image-overlay">
+          <span class="image-caption">BMW 535i (E34), 1990</span>
+          <span class="image-location"><i class="fas fa-map-marker-alt"></i> Германия</span>
+        </div>
+      </div>
+      <div class="gallery-info">
+        <h3>535i в оригинале</h3>
+        <p>Красивый экземпляр в серебристом металике с оригинальными литыми дисками Style 5.</p>
+      </div>
+    </div>
+
+    <!-- Изображение 2 -->
+    <div class="gallery-item interior" data-category="interior">
+      <div class="gallery-image dusty" style="background-image: url('images/gallery2.jpg');">
+        <div class="image-overlay">
+          <span class="image-caption">Кожаный салон</span>
+          <span class="image-location"><i class="fas fa-map-marker-alt"></i> США</span>
+        </div>
+      </div>
+      <div class="gallery-info">
+        <h3>Салон в полной комплектации</h3>
+        <p>Кожа "Перл Бич", деревянная отделка, электрорегулировка сидений с памятью.</p>
+      </div>
+    </div>
+
+    <!-- Изображение 3 -->
+    <div class="gallery-item engine" data-category="engine">
+      <div class="gallery-image dusty" style="background-image: url('images/gallery3.jpg');">
+        <div class="image-overlay">
+          <span class="image-caption">M50B25</span>
+          <span class="image-location"><i class="fas fa-map-marker-alt"></i> Польша</span>
+        </div>
+      </div>
+      <div class="gallery-info">
+        <h3>Двигатель M50</h3>
+        <p>Знаменитый рядный 6-цилиндровый двигатель объемом 2.5 литра. 192 л.с.</p>
+      </div>
+    </div>
+
+    <!-- Изображение 4 -->
+    <div class="gallery-item details" data-category="details">
+      <div class="gallery-image dusty" style="background-image: url('images/gallery4.jpg');">
+        <div class="image-overlay">
+          <span class="image-caption">Оптика</span>
+          <span class="image-location"><i class="fas fa-map-marker-alt"></i> Россия</span>
+        </div>
+      </div>
+      <div class="gallery-info">
+        <h3>Передняя оптика</h3>
+        <p>Характерные двойные фары с омывателями. Иконный дизайн 90-х.</p>
+      </div>
+    </div>
+
+    <!-- Изображение 5 -->
+    <div class="gallery-item exterior" data-category="exterior">
+      <div class="gallery-image dusty" style="background-image: url('images/gallery5.jpg');">
+        <div class="image-overlay">
+          <span class="image-caption">Тouring</span>
+          <span class="image-location"><i class="fas fa-map-marker-alt"></i> Италия</span>
+        </div>
+      </div>
+      <div class="gallery-info">
+        <h3>Универсал Touring</h3>
+        <p>E34 в кузове универсал. Редкий и практичный вариант.</p>
+      </div>
+    </div>
+
+    <!-- Изображение 6 -->
+    <div class="gallery-item details" data-category="details">
+      <div class="gallery-image dusty" style="background-image: url('images/gallery6.jpg');">
+        <div class="image-overlay">
+          <span class="image-caption">Приборная панель</span>
+          <span class="image-location"><i class="fas fa-map-marker-alt"></i> Англия</span>
+        </div>
+      </div>
+      <div class="gallery-info">
+        <h3>Щиток приборов</h3>
+        <p>Аналоговые приборы с оранжевой подсветкой. Максимальная скорость 260 км/ч.</p>
+      </div>
+    </div>
+
+    <!-- Изображение 7 -->
+    <div class="gallery-item exterior" data-category="exterior">
+      <div class="gallery-image dusty" style="background-image: url('images/gallery7.jpg');">
+        <div class="image-overlay">
+          <span class="image-caption">M5</span>
+          <span class="image-location"><i class="fas fa-map-marker-alt"></i> Япония</span>
+        </div>
+      </div>
+      <div class="gallery-info">
+        <h3>BMW M5 (E34)</h3>
+        <p>Легендарная спортивная версия с двигателем S38B38. 340 л.с.</p>
+      </div>
+    </div>
+
+    <!-- Изображение 8 -->
+    <div class="gallery-item interior" data-category="interior">
+      <div class="gallery-image dusty" style="background-image: url('images/gallery8.jpg');">
+        <div class="image-overlay">
+          <span class="image-caption">Рычаг КПП</span>
+          <span class="image-location"><i class="fas fa-map-marker-alt"></i> Германия</span>
+        </div>
+      </div>
+      <div class="gallery-info">
+        <h3>Механическая КПП</h3>
+        <p>5-ступенчатая механическая коробка передач Getrag. Идеальное сочетание.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Информация о фото -->
+  <section class="gallery-info-section">
+    <div class="info-card skewed-right">
+      <h3><i class="fas fa-camera-retro"></i> О фотографиях</h3>
+      <p>Все изображения обработаны в винтажном стиле с эффектом "старой фотографии". Добавлена зернистость, легкий желтый оттенок и виньетирование по краям для передачи атмосферы эпохи.</p>
+      <p>Фотографии предоставлены энтузиастами со всего мира.</p>
+    </div>
+  </section>
+</main>
+
+<!-- Подвал -->
+<footer class="main-footer">
+  <div class="footer-content">
+    <div class="footer-logo">
+      <span class="logo-bmw">BMW</span> <span class="logo-model">E34</span>
+      <p>Галерея легенды</p>
+    </div>
+    <div class="footer-links">
+      <h4>Навигация</h4>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="gallery.html" class="active">Галерея</a></li>
+        <li><a href="info.html">История</a></li>
+        <li><a href="buy.html">Купить</a></li>
+      </ul>
+    </div>
+    <div class="footer-info">
+      <h4>Добавить фото</h4>
+      <p>Хотите добавить свою E34 в галерею?</p>
+      <a href="mailto:gallery@e34-enthusiasts.com" class="footer-btn">Написать нам</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2023 Галерея BMW E34. Все фото принадлежат их владельцам.</p>
+  </div>
+</footer>
+
+</body>
+</html>

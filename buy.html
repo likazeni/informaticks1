@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Купить BMW E34</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<!-- Шапка -->
+<header class="main-header">
+  <div class="logo">
+    <a href="index.html">
+      <span class="logo-bmw">BMW</span>
+      <span class="logo-model">E34</span>
+      <span class="logo-years">Купить</span>
+    </a>
+  </div>
+  <nav class="main-nav">
+    <ul>
+      <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+      <li><a href="gallery.html"><i class="fas fa-images"></i> Галерея</a></li>
+      <li><a href="info.html"><i class="fas fa-info-circle"></i> История</a></li>
+      <li><a href="buy.html" class="active"><i class="fas fa-shopping-cart"></i> Купить</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Основной контент -->
+<main class="buy-page">
+  <section class="page-header">
+    <h1>Купить <span class="highlight">BMW E34</span></h1>
+    <p class="page-subtitle">Актуальные предложения и советы по покупке</p>
+  </section>
+
+  <!-- Предупреждение -->
+  <div class="warning-card">
+    <div class="warning-icon">
+      <i class="fas fa-exclamation-triangle"></i>
+    </div>
+    <div class="warning-content">
+      <h3>Внимание покупателю!</h3>
+      <p>E34 — автомобиль возрастом 25-35 лет. При покупке обратите особое внимание на состояние кузова (коррозия), двигателя (течи масла) и электроники. Рекомендуем проводить предварительный осмотр с опытным механиком.</p>
+    </div>
+  </div>
+
+  <!-- Сетка предложений -->
+  <section class="offers-section">
+    <h2 class="section-title">Текущие <span class="highlight">предложения</span></h2>
+    <p class="section-subtitle">Обновлено: <span id="current-date"></span></p>
+
+    <div class="offers-grid">
+      <!-- Предложение 1 -->
+      <div class="offer-card">
+        <div class="offer-header">
+          <span class="offer-badge new">НОВОЕ</span>
+          <span class="offer-price">450 000 ₽</span>
+        </div>
+        <div class="offer-image dusty" style="background-image: url('https://avatars.mds.yandex.net/get-autoru-vos/1687199/ce9ee75f3a0742736966f63c91101b95/1200x900');">
+          <div class="offer-overlay">
+            <span class="offer-location"><i class="fas fa-map-marker-alt"></i> Москва</span>
+          </div>
+        </div>
+        <div class="offer-content">
+          <h3>BMW 525i (E34)</h3>
+          <div class="offer-details">
+            <div class="detail">
+              <i class="fas fa-calendar-alt"></i>
+              <span>1993 год</span>
+            </div>
+            <div class="detail">
+              <i class="fas fa-tachometer-alt"></i>
+              <span>214 000 км</span>
+            </div>
+            <div class="detail">
+              <i class="fas fa-gas-pump"></i>
+              <span>Бензин, 2.5 л</span>
+            </div>
+            <div class="detail">
+              <i class="fas fa-cog"></i>
+              <span>МКПП</span>
+            </div>
+          </div>
+          <p class="offer-description">Отличное состояние, один хозяин 15 лет, полная сервисная история. Без коррозии.</p>
+          <div class="offer-features">
+            <span class="feature-tag">Кожаный салон</span>
+            <span class="feature-tag">Кондиционер</span>
+            <span class="feature-tag">Литые диски</span>
+          </div>
+          <div class="offer-actions">
+            <button class="btn btn-primary btn-small"><i class="fas fa-phone-alt"></i> Позвонить</button>
+            <button class="btn btn-secondary btn-small"><i class="fas fa-envelope"></i> Написать</button>
+            <a href="#" class="btn-details">Подробнее <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Предложение 2 -->
+      <div class="offer-card featured">
+        <div class="offer-header">
+          <span class="offer-badge featured-badge">РЕКОМЕНДУЕМ</span>
+          <span class="offer-price">1 200 000 ₽</span>
+        </div>
+        <div class="offer-image dusty" style="background-image: url('https://yandex-images.clstorage.net/9NHH9Z334/eaf993z74n/fbXmSelZ8aJB5i_IuCsRNdHo2SNribzyV4PIagNlcfGYIT11lIODu0olSl_3DxFj6kcPbTNYDePoQgyAbpavZ2z16gfyXeWlV-Joia50RSTNqI1iPt707EHfjHU7X0SduwsGSK-x54NcNwsJok4PJ6cuf39aInzP-Wt9027jhgBYqpoVtHDLgl3MCN7uDRQBp-XVD0qUkbdIitUnBWRom78nDWKQp8O0RCU0D6J8cTifF1M6bQ1T5eJncPx9z4UhZqK4N6JX7bB49h_uxAMPDoXo_gJNmouVS4LOJzVUSqqWGxlyjIPiulQRBh6CW2snpylrJVUJQPb8UXLQefStGECXqiO8bvKIfvIZ8cU2Ai-I1_kcZZW9imO-xjI3dH-psTgcWZyk5YVTJx0vjWZ0IIQTTSZ3BEPV-XF4w1nEmSRErYYgtEjttV3zEvL1AjAAj8j9JH2YkbBurMYWKlVgtI8mJ3-qs_-OVRwhA6l8Rie6CUQLcSFj0vxkV9Fj0ZISRLOPFLVT1KJRwijs2QAEP6fiyB9ChY-fYYPNLAprXI6XGxpYoJ3Jl04bIA6wVVMApTNkFWEcUuLrbUTsae2IJWGWqxCDcuqnWMMb6cYNOCCQ2usDXa-zlH6O5SQcVEeZsBcxU7Wa54ZAHy0uiWJwE6E0bwhlI33M7Fdf-0bjrRRMt7UykVvUjUPJCM3ECycjh_PcC3e2o7FuouQtD0ZPi7sEImOCouaZSzMuHLdzTSC0MlQobSV49ttIffBy7rkKRJSbCqNC_qFc4Drh3gQ6C6jy9R9amJG5UYDxLCZSc7CuBj1Nr4HPh2M4AA6kUkY3oxh1N1IicMz8aEf4QNabFn2Oly2MTOyCQsk7zdQPMBSY99Q_W6O2qUuTzjIhaGe-qwI7WZ6xxZ1uGys4gnNSPJMyWThKPF3g41JSzELBvR5glZgurVTlinfEF9LbMRwsj97WJGO-sa1agdgEFEc');">
+          <div class="offer-overlay">
+            <span class="offer-location"><i class="fas fa-map-marker-alt"></i> Санкт-Петербург</span>
+          </div>
+        </div>
+        <div class="offer-content">
+          <h3>BMW M5 (E34)</h3>
+          <div class="offer-details">
+            <div class="detail">
+              <i class="fas fa-calendar-alt"></i>
+              <span>1994 год</span>
+            </div>
+            <div class="detail">
+              <i class="fas fa-tachometer-alt"></i>
+              <span>167 000 км</span>
+            </div>
+            <div class="detail">
+              <i class="fas fa-gas-pump"></i>
+              <span>Бензин, 3.8 л</span>
+            </div>
+            <div class="detail">
+              <i class="fas fa-cog"></i>
+              <span>МКПП</span>
+            </div>
+          </div>
+          <p class="offer-description">Коллекционное состояние. Полная оригинальность. Вся документация. Гаражное хранение.</p>
+          <div class="offer-features">
+            <span class="feature-tag">340 л.с.</span>
+            <span class="feature-tag">Кожа Nappa</span>
+            <span class="feature-tag">Сертификат BMW</span>
+          </div>
+          <div class="offer-actions">
+            <button class="btn btn-primary btn-small"><i class="fas fa-phone-alt"></i> Позвонить</button>
+            <button class="btn btn-secondary btn-small"><i class="fas fa-envelope"></i> Написать</button>
+            <a href="#" class="btn-details">Подробнее <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Предложение 3 -->
+      <div class="offer-card">
+        <div class="offer-header">
+          <span class="offer-badge discount">СКИДКА</span>
+          <span class="offer-price"><s>300 000 ₽</s> 250 000 ₽</span>
+        </div>
+        <div class="offer-image dusty" style="background-image: url('https://avatars.mds.yandex.net/get-autoru-vos/5235035/8a109a83d6dca31be4879d5d32c017f3/1200x900');">
+          <div class="offer-overlay">
+            <span class="offer-location"><i class="fas fa-map-marker-alt"></i> Казань</span>
+          </div>
+        </div>
+        <div class="offer-content">
+          <h3>BMW 520i (E34)</h3>
+          <div class="offer-details">
+            <div class="detail">
+              <i class="fas fa-calendar-alt"></i>
+              <span>1991 год</span>
+            </div>
+            <div class="detail">
+              <i class="fas fa-tachometer-alt"></i>
+              <span>312 000 км</span>
+            </div>
+            <div class="detail">
+              <i class="fas fa-gas-pump"></i>
+              <span>Бензин, 2.0 л</span>
+            </div>
+            <div class="detail">
+              <i class="fas fa-cog"></i>
+              <span>АКПП</span>
+            </div>
+          </div>
+          <p class="offer-description">Требует косметического ремонта. Двигатель и коробка в хорошем состоянии. Есть небольшая коррозия.</p>
+          <div class="offer-features">
+            <span class="feature-tag">Новый ТО</span>
+            <span class="feature-tag">Зимняя резина</span>
+          </div>
+          <div class="offer-actions">
+            <button class="btn btn-primary btn-small"><i class="fas fa-phone-alt"></i> Позвонить</button>
+            <button class="btn btn-secondary btn-small"><i class="fas fa-envelope"></i> Написать</button>
+            <a href="#" class="btn-details">Подробнее <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Предложение 4 -->
+      <div class="offer-card">
+        <div class="offer-header">
+          <span class="offer-badge">ПОД ЗАКАЗ</span>
+          <span class="offer-price">от 800 000 ₽</span>
+        </div>
+        <div class="offer-image dusty" style="background-image: url('https://avatars.mds.yandex.net/get-autoru-vos/2160970/a2373ed347fef059fc456967f38e0777/1200x900');">
+          <div class="offer-overlay">
+            <span class="offer-location"><i class="fas fa-map-marker-alt"></i> Германия</span>
+          </div>
+        </div>
+        <div class="offer-content">
+          <h3>BMW 530i (E34)</h3>
+          <div class="offer-details">
+            <div class="detail">
+              <i class="fas fa-calendar-alt"></i>
+              <span>1995 год</span>
+            </div>
+            <div class="detail">
+              <i class="fas fa-tachometer-alt"></i>
+              <span>~120 000 км</span>
+            </div>
+            <div class="detail">
+              <i class="fas fa-gas-pump"></i>
+              <span>Бензин, 3.0 л V8</span>
+            </div>
+            <div class="detail">
+              <i class="fas fa-cog"></i>
+              <span>АКПП</span>
+            </div>
+          </div>
+          <p class="offer-description">Поиск и доставка из Германии. Подбор по вашим параметрам. Растаможка.</p>
+          <div class="offer-features">
+            <span class="feature-tag">Правый руль</span>
+            <span class="feature-tag">Немецкий рынок</span>
+            <span class="feature-tag">Полный пакет</span>
+          </div>
+          <div class="offer-actions">
+            <button class="btn btn-primary btn-small"><i class="fas fa-search"></i> Подобрать</button>
+            <button class="btn btn-secondary btn-small"><i class="fas fa-calculator"></i> Рассчитать</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Форма поиска -->
+  <section class="search-section">
+    <div class="search-card skewed-left">
+      <h2><i class="fas fa-search"></i> Поиск <span class="highlight">вашей</span> E34</h2>
+      <p>Заполните параметры, и мы уведомим вас о появлении подходящих предложений</p>
+
+      <form class="search-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="model"><i class="fas fa-car"></i> Модель</label>
+            <select id="model" name="model">
+              <option value="any">Любая</option>
+              <option value="518">518i</option>
+              <option value="520">520i</option>
+              <option value="525">525i</option>
+              <option value="530">530i</option>
+              <option value="535">535i</option>
+              <option value="540">540i</option>
+              <option value="m5">M5</option>
+              <option value="touring">Touring</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="year"><i class="fas fa-calendar"></i> Год от</label>
+            <select id="year" name="year">
+              <option value="any">Любой</option>
+              <option value="1988">1988</option>
+              <option value="1989">1989</option>
+              <option value="1990">1990</option>
+              <option value="1991">1991</option>
+              <option value="1992">1992</option>
+              <option value="1993">1993</option>
+              <option value="1994">1994</option>
+              <option value="1995">1995</option>
+              <option value="1996">1996</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="price"><i class="fas fa-ruble-sign"></i> Бюджет, ₽</label>
+            <input type="range" id="price" name="price" min="100000" max="2000000" step="100000" value="500000">
+            <div class="price-range">
+              <span>100 000</span>
+              <span id="price-value">500 000</span>
+              <span>2 000 000</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label><i class="fas fa-cogs"></i> Трансмиссия</label>
+            <div class="checkbox-group">
+              <label><input type="checkbox" name="transmission" value="manual" checked> МКПП</label>
+              <label><input type="checkbox" name="transmission" value="auto"> АКПП</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label><i class="fas fa-paint-brush"></i> Состояние</label>
+            <div class="checkbox-group">
+              <label><input type="checkbox" name="condition" value="excellent"> Отличное</label>
+              <label><input type="checkbox" name="condition" value="good" checked> Хорошее</label>
+              <label><input type="checkbox" name="condition" value="repair"> Требует ремонта</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group full-width">
+            <label for="email"><i class="fas fa-envelope"></i> Ваш email для уведомлений</label>
+            <input type="email" id="email" name="email" placeholder="e34enthusiast@example.com">
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary btn-large">
+            <i class="fas fa-bell"></i> Уведомлять о предложениях
+          </button>
+          <button type="reset" class="btn btn-secondary btn-large">
+            <i class="fas fa-redo"></i> Сбросить
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Советы по покупке -->
+  <section class="tips-section">
+    <h2 class="section-title">Советы по <span class="highlight">покупке</span></h2>
+
+    <div class="tips-grid">
+      <div class="tip-card">
+        <div class="tip-number">1</div>
+        <h3>Осмотр кузова</h3>
+        <p>Проверьте пороги, арки колес, нижние части дверей. E34 оцинкована, но в некоторых местах коррозия возможна.</p>
+      </div>
+      <div class="tip-card offset-right">
+        <div class="tip-number">2</div>
+        <h3>Двигатель</h3>
+        <p>Слушайте на холодную и горячую. Проверьте течи масла. Двигатели M50 и M60 надежны при своевременном обслуживании.</p>
+      </div>
+      <div class="tip-card offset-left">
+        <div class="tip-number">3</div>
+        <h3>Ходовая часть</h3>
+        <p>Проверьте состояние сайлентблоков, шаровых опор, рулевых наконечников. Протестируйте на разных скоростях.</p>
+      </div>
+      <div class="tip-card">
+        <div class="tip-number">4</div>
+        <h3>Электрика</h3>
+        <p>Проверьте всю электронику: сиденья, окна, люк, фары, кондиционер. Ремонт может быть дорогим.</p>
+      </div>
+    </div>
+
+    <div class="resources-card">
+      <h3><i class="fas fa-link"></i> Полезные ресурсы</h3>
+      <ul>
+        <li><a href="https://www.bimmerforums.com/forum/forumdisplay.php?f=14" target="_blank">Форум Bimmerforums (E34 секция)</a></li>
+        <li><a href="https://www.realoem.com" target="_blank">RealOEM.com</a> - Каталог оригинальных запчастей</li>
+        <li><a href="https://www.bmwfanatics.ru" target="_blank">BMWFanatics.ru</a> - Русскоязычное сообщество</li>
+        <li><a href="#" target="_blank">PDF руководство по эксплуатации E34 (скачать)</a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<!-- Подвал -->
+<footer class="main-footer">
+  <div class="footer-content">
+    <div class="footer-logo">
+      <span class="logo-bmw">BMW</span> <span class="logo-model">E34</span>
+      <p>Покупка легенды</p>
+    </div>
+    <div class="footer-links">
+      <h4>Навигация</h4>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="gallery.html">Галерея</a></li>
+        <li><a href="info.html">История</a></li>
+        <li><a href="buy.html" class="active">Купить</a></li>
+      </ul>
+    </div>
+    <div class="footer-info">
+      <h4>Помощь в покупке</h4>
+      <p>Нужна помощь в осмотре или подборе?</p>
+      <a href="mailto:buy@e34-enthusiasts.com" class="footer-btn">Консультация</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p><strong>Внимание:</strong> Сайт не является автосалоном. Все объявления размещены для примера.</p>
+    <p>© 2023 Покупка BMW E34. Будьте внимательны при покупке старых автомобилей.</p>
+  </div>
+</footer>
+
+<script>
+  // Обновление даты
+  document.addEventListener('DOMContentLoaded', function() {
+    const now = new Date();
+    const options = { day: 'numeric', month: 'long', year: 'numeric' };
+    document.getElementById('current-date').textContent = now.toLocaleDateString('ru-RU', options);
+
+    // Обновление значения ползунка цены
+    const priceSlider = document.getElementById('price');
+    const priceValue = document.getElementById('price-value');
+
+    priceSlider.addEventListener('input', function() {
+      const value = parseInt(this.value).toLocaleString('ru-RU');
+      priceValue.textContent = value + ' ₽';
+    });
+
+    // Инициализация значения при загрузке
+    const initialValue = parseInt(priceSlider.value).toLocaleString('ru-RU');
+    priceValue.textContent = initialValue + ' ₽';
+  });
+</script>
+</body>
+</html>
