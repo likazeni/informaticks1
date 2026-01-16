@@ -387,6 +387,162 @@
     <p>© 2023 Покупка BMW E34. Будьте внимательны при покупке старых автомобилей.</p>
   </div>
 </footer>
+<!-- Добавьте этот код в конец файла buy.html перед </body> -->
+
+<!-- Модальное окно для "Позвонить" -->
+<div id="callModal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h2><i class="fas fa-phone-alt"></i> Заказ звонка</h2>
+    <p>Оставьте ваш номер телефона, и мы перезвоним вам в течение 15 минут</p>
+
+    <form id="callForm" class="contact-form">
+      <div class="form-group">
+        <label for="callName"><i class="fas fa-user"></i> Ваше имя</label>
+        <input type="text" id="callName" name="name" placeholder="Иван Иванов" required>
+      </div>
+
+      <div class="form-group">
+        <label for="callPhone"><i class="fas fa-phone"></i> Номер телефона</label>
+        <input type="tel" id="callPhone" name="phone" placeholder="+7 (999) 123-45-67" required pattern="^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$">
+        <small>Формат: +7 (999) 123-45-67</small>
+      </div>
+
+      <div class="form-group">
+        <label for="callTime"><i class="fas fa-clock"></i> Удобное время для звонка</label>
+        <select id="callTime" name="time">
+          <option value="any">В любое время</option>
+          <option value="morning">Утро (9:00 - 12:00)</option>
+          <option value="day">День (12:00 - 18:00)</option>
+          <option value="evening">Вечер (18:00 - 21:00)</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="callCar">Интересующая модель</label>
+        <select id="callCar" name="car">
+          <option value="bmw-525i">BMW 525i (E34)</option>
+          <option value="bmw-530i">BMW 530i (E34)</option>
+          <option value="bmw-535i">BMW 535i (E34)</option>
+          <option value="bmw-540i">BMW 540i (E34)</option>
+          <option value="bmw-m5">BMW M5 (E34)</option>
+          <option value="bmw-touring">BMW Touring (E34)</option>
+          <option value="any">Любая модель</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="callMessage"><i class="fas fa-comment"></i> Комментарий (необязательно)</label>
+        <textarea id="callMessage" name="message" rows="3" placeholder="Укажите дополнительные пожелания..."></textarea>
+      </div>
+
+      <div class="form-group checkbox-group">
+        <label>
+          <input type="checkbox" name="privacy" required checked>
+          Соглашаюсь с обработкой персональных данных
+        </label>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-large">
+        <i class="fas fa-phone-volume"></i> Жду звонка
+      </button>
+    </form>
+
+    <div class="contact-info">
+      <p><i class="fas fa-info-circle"></i> Или позвоните нам сами: <strong>+7 (495) 123-45-67</strong></p>
+    </div>
+  </div>
+</div>
+
+<!-- Модальное окно для "Написать" -->
+<div id="messageModal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h2><i class="fas fa-envelope"></i> Написать сообщение</h2>
+    <p>Отправьте нам сообщение, и мы ответим в течение 24 часов</p>
+
+    <form id="messageForm" class="contact-form">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="messageName"><i class="fas fa-user"></i> Ваше имя</label>
+          <input type="text" id="messageName" name="name" placeholder="Иван Иванов" required>
+        </div>
+
+        <div class="form-group">
+          <label for="messageEmail"><i class="fas fa-envelope"></i> Email</label>
+          <input type="email" id="messageEmail" name="email" placeholder="ivan@example.com" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="messageSubject"><i class="fas fa-tag"></i> Тема сообщения</label>
+        <select id="messageSubject" name="subject">
+          <option value="buy">Покупка BMW E34</option>
+          <option value="consult">Консультация по выбору</option>
+          <option value="inspection">Осмотр автомобиля</option>
+          <option value="parts">Запчасти для E34</option>
+          <option value="other">Другой вопрос</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="messageCar">Интересующая модель</label>
+        <input type="text" id="messageCar" name="car" placeholder="Например: BMW 525i 1993 года" required>
+      </div>
+
+      <div class="form-group">
+        <label for="messageText"><i class="fas fa-edit"></i> Ваше сообщение</label>
+        <textarea id="messageText" name="message" rows="5" placeholder="Опишите подробно ваш вопрос или интерес..." required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="messageFiles"><i class="fas fa-paperclip"></i> Прикрепить файлы (до 3 файлов)</label>
+        <input type="file" id="messageFiles" name="files" multiple accept=".jpg,.jpeg,.png,.pdf,.doc,.docx">
+        <small>Можно прикрепить фото автомобиля, документы (макс. 5МБ каждый)</small>
+      </div>
+
+      <div class="form-group checkbox-group">
+        <label>
+          <input type="checkbox" name="newsletter">
+          Хочу получать новости о BMW E34 и скидки
+        </label>
+      </div>
+
+      <div class="form-group checkbox-group">
+        <label>
+          <input type="checkbox" name="privacy" required checked>
+          Соглашаюсь с обработкой персональных данных
+        </label>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary btn-large">
+          <i class="fas fa-paper-plane"></i> Отправить сообщение
+        </button>
+        <button type="reset" class="btn btn-secondary">
+          <i class="fas fa-redo"></i> Очистить
+        </button>
+      </div>
+    </form>
+
+    <div class="contact-info">
+      <p><i class="fas fa-envelope"></i> Или напишите на email: <strong>bmw-e34@example.com</strong></p>
+    </div>
+  </div>
+</div>
+
+<!-- Модальное окно успешной отправки -->
+<div id="successModal" class="modal success-modal">
+  <div class="modal-content">
+    <div class="success-icon">
+      <i class="fas fa-check-circle"></i>
+    </div>
+    <h2>Спасибо!</h2>
+    <p id="successMessage">Ваша заявка успешно отправлена</p>
+    <p>Мы свяжемся с вами в ближайшее время</p>
+    <button class="btn btn-primary close-success">Отлично!</button>
+  </div>
+</div>
 
 <script>
   // Обновление даты
@@ -407,6 +563,247 @@
     // Инициализация значения при загрузке
     const initialValue = parseInt(priceSlider.value).toLocaleString('ru-RU');
     priceValue.textContent = initialValue + ' ₽';
+  });
+  // ===== ФОРМЫ ОТПРАВКИ =====
+
+  function initContactForms() {
+    console.log('Initializing contact forms');
+
+    // Открытие модальных окон
+    document.querySelectorAll('.btn-small').forEach(button => {
+      const buttonText = button.textContent.toLowerCase();
+
+      if (buttonText.includes('позвонить')) {
+        button.addEventListener('click', function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          openModal('callModal');
+        });
+      }
+
+      if (buttonText.includes('написать')) {
+        button.addEventListener('click', function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          openModal('messageModal');
+        });
+      }
+    });
+
+    // Закрытие модальных окон
+    document.querySelectorAll('.close-modal, .close-success').forEach(closeBtn => {
+      closeBtn.addEventListener('click', function() {
+        closeModal(this.closest('.modal'));
+      });
+    });
+
+    // Закрытие по клику вне окна
+    document.querySelectorAll('.modal').forEach(modal => {
+      modal.addEventListener('click', function(e) {
+        if (e.target === this) {
+          closeModal(this);
+        }
+      });
+    });
+
+    // Закрытие по Escape
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        document.querySelectorAll('.modal').forEach(modal => {
+          closeModal(modal);
+        });
+      }
+    });
+
+    // Обработка форм
+    initFormSubmission();
+  }
+
+  function openModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+      modal.style.display = 'block';
+      document.body.style.overflow = 'hidden'; // Блокируем скролл
+      console.log('Opened modal:', modalId);
+    }
+  }
+
+  function closeModal(modal) {
+    if (modal) {
+      modal.style.display = 'none';
+      document.body.style.overflow = 'auto'; // Разблокируем скролл
+      console.log('Closed modal');
+    }
+  }
+
+  function initFormSubmission() {
+    // Форма звонка
+    const callForm = document.getElementById('callForm');
+    if (callForm) {
+      callForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        if (validateForm(this)) {
+          submitCallForm(this);
+        }
+      });
+    }
+
+    // Форма сообщения
+    const messageForm = document.getElementById('messageForm');
+    if (messageForm) {
+      messageForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        if (validateForm(this)) {
+          submitMessageForm(this);
+        }
+      });
+    }
+  }
+
+  function validateForm(form) {
+    let isValid = true;
+    const inputs = form.querySelectorAll('input, select, textarea');
+
+    inputs.forEach(input => {
+      // Сбрасываем предыдущие ошибки
+      input.classList.remove('error');
+      const errorSpan = input.nextElementSibling;
+      if (errorSpan && errorSpan.classList.contains('error-message')) {
+        errorSpan.remove();
+      }
+
+      // Проверка required
+      if (input.hasAttribute('required') && !input.value.trim()) {
+        showError(input, 'Это поле обязательно для заполнения');
+        isValid = false;
+      }
+
+      // Проверка email
+      if (input.type === 'email' && input.value) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(input.value)) {
+          showError(input, 'Введите корректный email адрес');
+          isValid = false;
+        }
+      }
+
+      // Проверка телефона
+      if (input.type === 'tel' && input.value) {
+        const phoneRegex = /^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/;
+        if (!phoneRegex.test(input.value.replace(/\s/g, ''))) {
+          showError(input, 'Введите корректный номер телефона');
+          isValid = false;
+        }
+      }
+
+      // Проверка чекбоксов
+      if (input.type === 'checkbox' && input.hasAttribute('required') && !input.checked) {
+        showError(input, 'Необходимо согласие');
+        isValid = false;
+      }
+    });
+
+    return isValid;
+  }
+
+  function showError(input, message) {
+    input.classList.add('error');
+    input.style.borderColor = '#ff4444';
+
+    const errorSpan = document.createElement('span');
+    errorSpan.className = 'error-message';
+    errorSpan.textContent = message;
+    errorSpan.style.cssText = `
+        color: #ff4444;
+        font-size: 0.85rem;
+        margin-top: 5px;
+        display: block;
+    `;
+
+    input.parentNode.insertBefore(errorSpan, input.nextSibling);
+
+    // Убираем ошибку при исправлении
+    input.addEventListener('input', function() {
+      this.classList.remove('error');
+      this.style.borderColor = '';
+      if (errorSpan.parentNode) {
+        errorSpan.remove();
+      }
+    }, { once: true });
+  }
+
+  function submitCallForm(form) {
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+
+    console.log('Call form submitted:', data);
+
+    // Симуляция отправки
+    simulateSubmission('callModal', 'Заявка на звонок успешно отправлена! Мы перезвоним вам в течение 15 минут.');
+  }
+
+  function submitMessageForm(form) {
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+
+    // Обработка файлов
+    const files = form.querySelector('input[type="file"]').files;
+    if (files.length > 0) {
+      console.log('Attached files:', files.length);
+      data.files = Array.from(files).map(f => f.name);
+    }
+
+    console.log('Message form submitted:', data);
+
+    // Симуляция отправки
+    simulateSubmission('messageModal', 'Сообщение успешно отправлено! Мы ответим вам в течение 24 часов.');
+  }
+
+  function simulateSubmission(closeModalId, successMessage) {
+    // Показываем индикатор загрузки
+    const submitButton = document.querySelector(`#${closeModalId.replace('Modal', 'Form')} button[type="submit"]`);
+    const originalText = submitButton.innerHTML;
+    submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Отправка...';
+    submitButton.disabled = true;
+
+    // Симуляция задержки сети
+    setTimeout(() => {
+      // Закрываем форму
+      closeModal(document.getElementById(closeModalId));
+
+      // Сбрасываем форму
+      const form = document.getElementById(closeModalId.replace('Modal', 'Form'));
+      if (form) form.reset();
+
+      // Восстанавливаем кнопку
+      submitButton.innerHTML = originalText;
+      submitButton.disabled = false;
+
+      // Показываем успешное сообщение
+      setTimeout(() => {
+        showSuccessMessage(successMessage);
+      }, 300);
+    }, 1500);
+  }
+
+  function showSuccessMessage(message) {
+    const successModal = document.getElementById('successModal');
+    const successMessage = document.getElementById('successMessage');
+
+    if (successModal && successMessage) {
+      successMessage.textContent = message;
+      openModal('successModal');
+
+      // Автоматическое закрытие через 5 секунд
+      setTimeout(() => {
+        closeModal(successModal);
+      }, 5000);
+    }
+  }
+
+  // Инициализация форм при загрузке страницы
+  document.addEventListener('DOMContentLoaded', function() {
+    initContactForms();
   });
 </script>
 </body>
