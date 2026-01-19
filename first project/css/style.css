@@ -1,6 +1,6 @@
-/* ===== ОСНОВНЫЕ СТИЛИ BMW E34 SITE ===== */
 
-/* 1. Сброс и базовые настройки */
+
+
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +23,7 @@ body {
     background-attachment: fixed;
 }
 
-/* 2. Типографика */
+
 h1, h2, h3, h4, h5, h6,
 .logo, .btn, .main-nav a {
     font-family: 'Oswald', sans-serif;
@@ -82,7 +82,7 @@ p {
     border-radius: 2px;
 }
 
-/* 3. Логотип */
+
 .logo a {
     text-decoration: none;
     font-size: 2.2rem;
@@ -114,7 +114,7 @@ p {
     margin-left: 5px;
 }
 
-/* 4. Шапка */
+
 .main-header {
     display: flex;
     justify-content: space-between;
@@ -166,7 +166,7 @@ p {
     background-color: #ffed99;
 }
 
-/* 5. Кнопки */
+
 .btn {
     display: inline-flex;
     align-items: center;
@@ -236,7 +236,7 @@ p {
     font-size: 0.9rem;
 }
 
-/* 6. Эффект "запыленности" */
+
 .dusty {
     position: relative;
 }
@@ -268,7 +268,7 @@ p {
     z-index: 2;
 }
 
-/* 7. Смещенные элементы */
+
 .skewed-right {
     transform: rotate(0.7deg);
     margin-left: 15px;
@@ -295,7 +295,7 @@ p {
     }
 }
 
-/* 8. Герой-секция (главная) */
+
 .hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -371,7 +371,7 @@ p {
     margin-left: 15px;
 }
 
-/* 9. Разделитель */
+
 .divider {
     display: flex;
     align-items: center;
@@ -398,7 +398,7 @@ p {
     100% { transform: rotate(360deg); }
 }
 
-/* 10. Карточки особенностей */
+
 .features-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -443,7 +443,7 @@ p {
     margin-bottom: 20px;
 }
 
-/* 11. Цитата */
+
 .quote {
     margin: 60px 0;
     padding: 40px;
@@ -494,7 +494,7 @@ p {
     border: 5px solid #333;
 }
 
-/* 12. Призыв к действию */
+
 .cta {
     background: linear-gradient(135deg, rgba(255, 215, 0, 0.05), rgba(0, 0, 0, 0.8));
     background-size: cover;
@@ -529,7 +529,7 @@ p {
     flex-wrap: wrap;
 }
 
-/* 13. Подвал */
+
 .main-footer {
     background-color: #0a0a0a;
     border-top: 2px solid #333;
@@ -612,7 +612,7 @@ p {
     color: #aaa;
 }
 
-/* 14. Стили для страницы галереи */
+
 .gallery-page {
     padding: 40px;
 }
@@ -740,7 +740,7 @@ p {
     margin: 0 auto;
 }
 
-/* 15. Стили для страницы истории */
+
 .timeline-section {
     margin: 60px 0;
 }
@@ -858,7 +858,7 @@ p {
     border-left: 3px solid #ffd700;
 }
 
-/* Табы спецификаций */
+
 .specs-tabs {
     margin: 40px 0;
 }
@@ -995,7 +995,7 @@ p {
     color: #ffd700;
 }
 
-/* Интересные факты */
+
 .facts-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -1049,7 +1049,7 @@ p {
     text-decoration: underline;
 }
 
-/* 16. Стили для страницы покупки */
+
 .warning-card {
     display: flex;
     background-color: rgba(255, 215, 0, 0.1);
@@ -1225,7 +1225,7 @@ p {
     gap: 12px;
 }
 
-/* Форма поиска */
+
 .search-section {
     margin: 60px 0;
 }
@@ -1329,7 +1329,7 @@ p {
     flex-wrap: wrap;
 }
 
-/* Советы */
+
 .tips-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -1401,7 +1401,7 @@ p {
     text-decoration: underline;
 }
 
-/* 17. Адаптивность */
+
 @media (max-width: 1200px) {
     .hero {
         grid-template-columns: 1fr;
@@ -1579,7 +1579,7 @@ p {
     }
 }
 
-/* 18. Анимации */
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -1611,9 +1611,9 @@ p {
 
 
 
-/* ===== АВТОМАТИЧЕСКИЕ ВИНТАЖНЫЕ ЭФФЕКТЫ ===== */
 
-/* 1. Автоматический винтажный фильтр для всех изображений */
+
+
 .dusty,
 .gallery-image,
 .offer-image,
@@ -1624,7 +1624,7 @@ p {
     filter: sepia(0.25) grayscale(0.15) contrast(1.1) brightness(0.95);
 }
 
-/* 2. Анимация "пульсации" старины */
+
 @keyframes vintage-pulse {
     0% {
         filter: sepia(0.2) grayscale(0.1) contrast(1.05) brightness(0.97);
@@ -1637,7 +1637,7 @@ p {
     }
 }
 
-/* 3. Случайные царапины (применяются автоматически) */
+
 .dusty::after,
 .gallery-image::after,
 .image-frame::after {
@@ -1659,7 +1659,7 @@ p {
     animation: scratches-move 20s infinite linear;
 }
 
-/* 4. Движение царапин */
+
 @keyframes scratches-move {
     0% {
         background-position: 0 0, 100px 50px, 50px 100px;
@@ -1669,7 +1669,7 @@ p {
     }
 }
 
-/* 5. Виньетирование (затемнение по краям) */
+
 .dusty::before,
 .gallery-image::before,
 .image-frame::before {
@@ -1686,7 +1686,7 @@ p {
     animation: vignette-breathe 10s infinite alternate;
 }
 
-/* 6. Дыхание виньетки */
+
 @keyframes vignette-breathe {
     0% {
         opacity: 0.2;
@@ -1698,7 +1698,7 @@ p {
     }
 }
 
-/* 7. Эффект пыльных частиц */
+
 @keyframes dust-particles {
     0% {
         background-position: 0 0, 100px 100px, 200px 200px;
@@ -1712,7 +1712,7 @@ p {
     position: relative;
 }
 
-/* 8. Добавляем зернистость (шум) */
+
 .dusty::before {
     background-image:
             radial-gradient(circle at 20% 80%, rgba(139, 69, 19, 0.05) 0%, transparent 50%),
@@ -1720,7 +1720,7 @@ p {
             url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" opacity="0.03"><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"/></filter><rect width="100" height="100" filter="url(%23noise)"/></svg>');
 }
 
-/* 9. Разные уровни винтажности для разных элементов */
+
 .gallery-image {
     filter: sepia(0.3) grayscale(0.2) contrast(1.15) brightness(0.9);
     animation-duration: 12s;
@@ -1736,7 +1736,7 @@ p {
     animation-duration: 20s;
 }
 
-/* 10. Эффект выцветания фотографии */
+
 @keyframes photo-fade {
     0%, 100% {
         filter: sepia(0.25) grayscale(0.15) contrast(1.1) brightness(0.95);
@@ -1746,7 +1746,7 @@ p {
     }
 }
 
-/* 11. При наведении - эффект "вспоминания" (картинка становится четче) */
+
 .dusty:hover,
 .gallery-image:hover,
 .offer-image:hover {
@@ -1755,7 +1755,7 @@ p {
     transition: filter 0.8s ease;
 }
 
-/* 12. Для старых фото в галерее - дополнительный эффект */
+
 .gallery-item:nth-child(odd) .gallery-image {
     filter: sepia(0.4) grayscale(0.3) contrast(1.3) brightness(0.8) hue-rotate(-5deg);
 }
@@ -1764,7 +1764,7 @@ p {
     filter: sepia(0.35) grayscale(0.25) contrast(1.25) brightness(0.85) hue-rotate(5deg);
 }
 
-/* 13. Эффект световой утечки (light leak) для некоторых изображений */
+
 .gallery-item:nth-child(3) .gallery-image::after,
 .offer-card:nth-child(2) .offer-image::after {
     content: '';
@@ -1795,7 +1795,7 @@ p {
     }
 }
 
-/* 14. Эффект пожелтевшей бумаги для инфо-страницы */
+
 .info-page .timeline-content {
     background: linear-gradient(to bottom,
     rgba(30, 20, 0, 0.1) 0%,
@@ -1805,7 +1805,7 @@ p {
     radial-gradient(circle at 50% 50%, rgba(255, 240, 200, 0.05) 0%, transparent 50%);
 }
 
-/* 15. Автоматическая рандомизация анимаций */
+
 .gallery-item:nth-child(1) .gallery-image { animation-delay: 0s; }
 .gallery-item:nth-child(2) .gallery-image { animation-delay: 2s; }
 .gallery-item:nth-child(3) .gallery-image { animation-delay: 4s; }
@@ -1820,7 +1820,7 @@ p {
 .offer-card:nth-child(3) .offer-image { animation-delay: 5s; }
 .offer-card:nth-child(4) .offer-image { animation-delay: 7s; }
 
-/* 16. Медиа-запрос для плавности на мобильных */
+
 @media (max-width: 768px) {
     .dusty,
     .gallery-image,
@@ -1831,7 +1831,7 @@ p {
         animation-timing-function: ease-in-out;
     }
 
-    /* Убираем сложные эффекты на мобильных для производительности */
+    
     .dusty::after,
     .gallery-image::after,
     .image-frame::after {
@@ -1840,7 +1840,7 @@ p {
     }
 }
 
-/* 17. Эффект "старой кинопленки" для галереи */
+
 .gallery-grid::before {
     content: '';
     position: fixed;
@@ -1865,7 +1865,7 @@ p {
     mix-blend-mode: multiply;
 }
 
-/* 18. Автоматическое добавление эффектов для новых изображений */
+
 img[class*="vintage"],
 img[src*="old"],
 img[src*="vintage"],
@@ -1875,7 +1875,7 @@ img[alt*="old"] {
     transition: filter 0.5s ease !important;
 }
 
-/* 19. Эффект для страницы покупки - как старые объявления */
+
 .buy-page .offer-card {
     background: linear-gradient(to bottom,
     rgba(255, 245, 220, 0.05) 0%,
@@ -1884,7 +1884,7 @@ img[alt*="old"] {
     border: 1px solid rgba(139, 69, 19, 0.2);
 }
 
-/* 20. Итоговый эффект - едва заметное дрожание как у старой проекции */
+
 @keyframes old-film-shake {
     0%, 100% { transform: translateX(0) translateY(0); }
     10% { transform: translateX(-0.5px) translateY(0.3px); }
@@ -1898,7 +1898,7 @@ img[alt*="old"] {
     90% { transform: translateX(-0.2px) translateY(0.5px); }
 }
 
-/* Применяем дрожание к контейнеру галереи */
+
 .gallery-page main {
     animation: old-film-shake 0.3s infinite;
     animation-play-state: paused;
@@ -1907,11 +1907,11 @@ img[alt*="old"] {
 .gallery-page main:hover {
     animation-play-state: running;
 }
-/* ===== АДАПТИВНОСТЬ ДЛЯ ВСЕХ УСТРОЙСТВ ===== */
 
-/* 1. ТАБЛЕТЫ (1024px - 769px) */
+
+
 @media (max-width: 1024px) {
-    /* Общие настройки */
+    
     body {
         font-size: 16px;
     }
@@ -1937,7 +1937,7 @@ img[alt*="old"] {
         padding: 6px 12px;
     }
 
-    /* Главная страница */
+    
     .hero {
         grid-template-columns: 1fr;
         gap: 40px;
@@ -1981,7 +1981,7 @@ img[alt*="old"] {
         margin: 0;
     }
 
-    /* Особенности */
+    
     .features-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
@@ -1997,7 +1997,7 @@ img[alt*="old"] {
         transform: none;
     }
 
-    /* Цитата */
+    
     .quote-container {
         grid-template-columns: 1fr;
         gap: 30px;
@@ -2012,7 +2012,7 @@ img[alt*="old"] {
         order: -1;
     }
 
-    /* Галерея */
+    
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
@@ -2028,7 +2028,7 @@ img[alt*="old"] {
         padding: 0 20px;
     }
 
-    /* История */
+    
     .timeline::before {
         left: 30px;
     }
@@ -2051,7 +2051,7 @@ img[alt*="old"] {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    /* Покупка */
+    
     .offers-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
@@ -2075,9 +2075,9 @@ img[alt*="old"] {
     }
 }
 
-/* 2. БОЛЬШИЕ ТЕЛЕФОНЫ (768px - 481px) */
+
 @media (max-width: 768px) {
-    /* Общие настройки */
+    
     .main-nav ul {
         gap: 10px;
     }
@@ -2087,7 +2087,7 @@ img[alt*="old"] {
         padding: 5px 10px;
     }
 
-    /* Заголовки */
+    
     h1 {
         font-size: 2.5rem;
     }
@@ -2105,7 +2105,7 @@ img[alt*="old"] {
         margin: 2rem 1rem;
     }
 
-    /* Контейнеры */
+    
     main {
         padding: 20px 15px;
     }
@@ -2122,7 +2122,7 @@ img[alt*="old"] {
         height: 300px;
     }
 
-    /* Кнопки */
+    
     .btn {
         padding: 10px 20px;
         font-size: 1rem;
@@ -2145,7 +2145,7 @@ img[alt*="old"] {
         text-align: center;
     }
 
-    /* Особенности */
+    
     .features-grid {
         grid-template-columns: 1fr;
         gap: 15px;
@@ -2156,7 +2156,7 @@ img[alt*="old"] {
         padding: 15px;
     }
 
-    /* Цитата */
+    
     .quote {
         padding: 20px;
         margin: 30px 0;
@@ -2166,7 +2166,7 @@ img[alt*="old"] {
         font-size: 1.3rem;
     }
 
-    /* CTA секция */
+    
     .cta {
         padding: 50px 20px;
     }
@@ -2175,7 +2175,7 @@ img[alt*="old"] {
         font-size: 2.2rem;
     }
 
-    /* Галерея */
+    
     .gallery-grid {
         grid-template-columns: 1fr;
         gap: 15px;
@@ -2191,7 +2191,7 @@ img[alt*="old"] {
         font-size: 0.9rem;
     }
 
-    /* Пагинация */
+    
     .pagination {
         gap: 5px;
     }
@@ -2201,7 +2201,7 @@ img[alt*="old"] {
         font-size: 0.9rem;
     }
 
-    /* История */
+    
     .specs-row {
         grid-template-columns: 1fr;
         font-size: 0.85rem;
@@ -2236,7 +2236,7 @@ img[alt*="old"] {
         column-count: 1;
     }
 
-    /* Покупка */
+    
     .offers-grid {
         grid-template-columns: 1fr;
         gap: 15px;
@@ -2301,7 +2301,7 @@ img[alt*="old"] {
         grid-template-columns: 1fr;
     }
 
-    /* Футер */
+    
     .footer-content {
         grid-template-columns: 1fr;
         text-align: center;
@@ -2326,9 +2326,9 @@ img[alt*="old"] {
     }
 }
 
-/* 3. МАЛЕНЬКИЕ ТЕЛЕФОНЫ (480px и меньше) */
+
 @media (max-width: 480px) {
-    /* Общие настройки */
+    
     body {
         font-size: 14px;
     }
@@ -2367,7 +2367,7 @@ img[alt*="old"] {
         border-radius: 4px;
     }
 
-    /* Заголовки */
+    
     h1 {
         font-size: 2rem;
         line-height: 1.2;
@@ -2386,7 +2386,7 @@ img[alt*="old"] {
         margin: 1.5rem 0;
     }
 
-    /* Главная страница */
+    
     .hero-title {
         font-size: 2rem;
     }
@@ -2408,13 +2408,13 @@ img[alt*="old"] {
         border-width: 8px;
     }
 
-    /* Особенности */
+    
     .feature-icon {
         font-size: 2rem;
         margin-bottom: 15px;
     }
 
-    /* Цитата */
+    
     .quote {
         padding: 15px;
         margin: 20px 0;
@@ -2429,7 +2429,7 @@ img[alt*="old"] {
         top: -15px;
     }
 
-    /* CTA */
+    
     .cta {
         padding: 30px 15px;
         margin: 30px 0;
@@ -2443,7 +2443,7 @@ img[alt*="old"] {
         font-size: 1rem;
     }
 
-    /* Галерея */
+    
     .page-header {
         margin-bottom: 30px;
     }
@@ -2485,7 +2485,7 @@ img[alt*="old"] {
         font-size: 0.8rem;
     }
 
-    /* История */
+    
     .timeline::before {
         left: 20px;
     }
@@ -2511,7 +2511,7 @@ img[alt*="old"] {
         font-size: 1.5rem;
     }
 
-    /* Покупка */
+    
     .warning-card {
         flex-direction: column;
         text-align: center;
@@ -2543,7 +2543,7 @@ img[alt*="old"] {
         text-align: center;
     }
 
-    /* Футер */
+    
     .footer-links ul {
         flex-direction: column;
         gap: 8px;
@@ -2554,7 +2554,7 @@ img[alt*="old"] {
         line-height: 1.4;
     }
 
-    /* Убираем сложные эффекты для производительности */
+    
     .dusty::after,
     .dusty::before,
     .gallery-image::after,
@@ -2570,9 +2570,9 @@ img[alt*="old"] {
     }
 }
 
-/* 4. ОЧЕНЬ МАЛЕНЬКИЕ ТЕЛЕФОНЫ (360px и меньше) */
+
 @media (max-width: 360px) {
-    /* Еще более компактные стили */
+    
     .hero-title {
         font-size: 1.8rem;
     }
@@ -2608,9 +2608,9 @@ img[alt*="old"] {
     }
 }
 
-/* 5. ЛАНДШАФТНАЯ ОРИЕНТАЦИЯ (горизонтально) */
+
 @media (max-height: 600px) and (orientation: landscape) {
-    /* Компактные стили для ландшафта */
+    
     .main-header {
         padding: 10px;
     }
@@ -2639,9 +2639,9 @@ img[alt*="old"] {
     }
 }
 
-/* 6. ДЛЯ ВЫСОКИХ ЭКРАНОВ (более 1200px) */
+
 @media (min-width: 1200px) {
-    /* Улучшения для больших экранов */
+    
     .container {
         max-width: 1200px;
         margin: 0 auto;
@@ -2660,7 +2660,7 @@ img[alt*="old"] {
     }
 }
 
-/* 7. ДЛЯ ОЧЕНЬ ШИРОКИХ ЭКРАНОВ (более 1600px) */
+
 @media (min-width: 1600px) {
     body {
         font-size: 18px;
@@ -2683,7 +2683,7 @@ img[alt*="old"] {
     }
 }
 
-/* 8. ОСОБЫЕ СТИЛИ ДЛЯ ПЛАНШЕТОВ В ПОРТРЕТНОЙ ОРИЕНТАЦИИ */
+
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
     .hero {
         min-height: 70vh;
@@ -2698,9 +2698,9 @@ img[alt*="old"] {
     }
 }
 
-/* 9. ТЕМНАЯ ТЕМА (если поддерживается) */
+
 @media (prefers-color-scheme: dark) {
-    /* Усиливаем контраст для темной темы */
+    
     body {
         background-color: #000;
     }
@@ -2716,7 +2716,7 @@ img[alt*="old"] {
     }
 }
 
-/* 11. УМЕНЬШЕНИЕ ДВИЖЕНИЯ (для чувствительных пользователей) */
+
 @media (prefers-reduced-motion: reduce) {
     *,
     *::before,
@@ -2741,9 +2741,9 @@ img[alt*="old"] {
     }
 }
 
-/* 12. ОПТИМИЗАЦИЯ ДЛЯ ТАЧ-УСТРОЙСТВ */
+
 @media (hover: none) and (pointer: coarse) {
-    /* Увеличиваем области клика для тач-устройств */
+    
     .btn,
     .filter-btn,
     .tab-btn,
@@ -2760,20 +2760,20 @@ img[alt*="old"] {
         margin: 5px 0;
     }
 
-    /* Убираем hover-эффекты */
+    
     .btn:hover,
     .feature-card:hover,
     .offer-card:hover {
         transform: none;
     }
 
-    /* Увеличиваем размер инпутов */
+    
     input, select, textarea {
-        font-size: 16px; /* Предотвращает масштабирование в iOS */
+        font-size: 16px; 
         padding: 12px;
     }
 
-    /* Делаем галерею более тач-дружелюбной */
+    
     .gallery-item {
         padding: 5px;
     }
@@ -2783,9 +2783,9 @@ img[alt*="old"] {
     }
 }
 
-/* 13. ПЕЧАТЬ */
+
 @media print {
-    /* Стили для печати */
+    
     .main-header,
     .main-nav,
     .footer-content,
@@ -2826,9 +2826,9 @@ img[alt*="old"] {
         padding: 0;
     }
 }
-/* ===== СТИЛИ ДЛЯ ФОРМ И МОДАЛЬНЫХ ОКОН ===== */
 
-/* Модальное окно */
+
+
 .modal {
     display: none;
     position: fixed;
@@ -2886,7 +2886,7 @@ img[alt*="old"] {
     transform: rotate(90deg);
 }
 
-/* Заголовки форм */
+
 .modal-content h2 {
     color: #ffd700;
     margin-bottom: 10px;
@@ -2901,7 +2901,7 @@ img[alt*="old"] {
     font-size: 1.1rem;
 }
 
-/* Формы */
+
 .contact-form {
     margin-top: 20px;
 }
@@ -2954,7 +2954,7 @@ img[alt*="old"] {
     font-size: 0.85rem;
 }
 
-/* Чекбоксы */
+
 .checkbox-group label {
     display: flex;
     align-items: flex-start;
@@ -2971,7 +2971,7 @@ img[alt*="old"] {
     accent-color: #ffd700;
 }
 
-/* Файлы */
+
 .contact-form input[type="file"] {
     padding: 10px;
     background-color: #222;
@@ -2992,7 +2992,7 @@ img[alt*="old"] {
     background-color: #444;
 }
 
-/* Информация контактов */
+
 .contact-info {
     margin-top: 25px;
     padding-top: 20px;
@@ -3005,7 +3005,7 @@ img[alt*="old"] {
     color: #ffed99;
 }
 
-/* Модальное окно успеха */
+
 .success-modal .modal-content {
     text-align: center;
     max-width: 500px;
@@ -3040,7 +3040,7 @@ img[alt*="old"] {
     padding: 12px 40px;
 }
 
-/* Адаптивность форм */
+
 @media (max-width: 768px) {
     .modal-content {
         width: 95%;
@@ -3056,7 +3056,7 @@ img[alt*="old"] {
     .contact-form input,
     .contact-form select,
     .contact-form textarea {
-        font-size: 16px; /* Предотвращает зумирование в iOS */
+        font-size: 16px; 
     }
 
     .success-icon {
@@ -3090,7 +3090,7 @@ img[alt*="old"] {
         width: 100%;
     }
 }
-/* Стили для ошибок валидации */
+
 input.error,
 select.error,
 textarea.error {
@@ -3111,7 +3111,7 @@ textarea.error {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Спиннер загрузки */
+
 .fa-spinner {
     animation: spin 1s linear infinite;
     margin-right: 8px;
@@ -3120,4 +3120,512 @@ textarea.error {
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+
+
+.calc-modal {
+    max-width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.calc-steps {
+    position: relative;
+    min-height: 500px;
+}
+
+.calc-step {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.calc-step.active {
+    display: block;
+}
+
+.step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: linear-gradient(135deg, #ffd700, #ffed99);
+    color: #000;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+.calc-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.calc-option {
+    background: #1a1a1a;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.calc-option:hover {
+    border-color: #ffd700;
+    transform: translateY(-5px);
+    background: #222;
+}
+
+.calc-option.selected {
+    border-color: #ffd700;
+    background: rgba(255, 215, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.2);
+}
+
+.option-icon {
+    font-size: 2rem;
+    color: #ffd700;
+}
+
+.option-content {
+    flex: 1;
+}
+
+.option-content h4 {
+    margin: 0 0 5px 0;
+    color: #ffed99;
+    font-size: 1.2rem;
+}
+
+.option-content p {
+    margin: 0;
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+.option-price {
+    display: block;
+    margin-top: 10px;
+    color: #ffd700;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+
+.condition-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.condition-option {
+    background: #1a1a1a;
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.condition-option:hover {
+    border-color: #ffd700;
+    transform: translateY(-3px);
+}
+
+.condition-option.selected {
+    border-color: #ffd700;
+    background: rgba(255, 215, 0, 0.1);
+}
+
+.condition-option h4 {
+    margin: 0 0 10px 0;
+    color: #ffed99;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.condition-option p {
+    margin: 0 0 10px 0;
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+.multiplier {
+    display: inline-block;
+    background: #333;
+    color: #ffd700;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+
+.calc-sliders {
+    margin: 30px 0;
+}
+
+.slider-group {
+    margin-bottom: 30px;
+}
+
+.slider-group label {
+    display: block;
+    margin-bottom: 10px;
+    color: #ffed99;
+    font-weight: bold;
+}
+
+.calc-slider {
+    width: 100%;
+    height: 8px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: #333;
+    border-radius: 4px;
+    outline: none;
+}
+
+.calc-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    background: #ffd700;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #000;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.calc-slider::-moz-range-thumb {
+    width: 24px;
+    height: 24px;
+    background: #ffd700;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #000;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.slider-value {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+.slider-value span:nth-child(2) {
+    color: #ffd700;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+
+.calc-checkboxes {
+    margin-top: 40px;
+}
+
+.checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.checkbox-grid label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 15px;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.checkbox-grid label:hover {
+    border-color: #ffd700;
+    background: #222;
+}
+
+.checkbox-grid input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #ffd700;
+}
+
+.checkbox-grid span {
+    color: #ddd;
+    flex: 1;
+}
+
+
+.step-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+}
+
+.next-step, .prev-step {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.calc-result {
+    margin: 30px 0;
+}
+
+.result-summary {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: rgba(255, 215, 0, 0.05);
+    border: 2px solid #ffd700;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.result-icon {
+    font-size: 3rem;
+    color: #ffd700;
+}
+
+.result-details {
+    flex: 1;
+}
+
+.result-details h4 {
+    margin: 0 0 10px 0;
+    color: #ffed99;
+    font-size: 1.5rem;
+}
+
+.result-details p {
+    margin: 0;
+    color: #aaa;
+    font-size: 1rem;
+}
+
+.result-price {
+    text-align: right;
+}
+
+.price-final {
+    font-size: 2.5rem;
+    color: #ffd700;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.price-range {
+    font-size: 1.1rem;
+    color: #aaa;
+    margin-top: 10px;
+}
+
+
+.result-breakdown {
+    background: #1a1a1a;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.result-breakdown h5 {
+    color: #ffed99;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+.breakdown-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.breakdown-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #222;
+}
+
+.breakdown-item span:first-child {
+    color: #ddd;
+}
+
+.breakdown-item span:last-child {
+    color: #ffd700;
+    font-weight: bold;
+}
+
+.breakdown-item.total {
+    border-top: 2px solid #333;
+    border-bottom: none;
+    margin-top: 10px;
+    padding-top: 20px;
+    font-size: 1.2rem;
+}
+
+
+.result-actions {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.result-actions .btn {
+    flex: 1;
+    min-width: 200px;
+    justify-content: center;
+}
+
+.result-note {
+    background: rgba(255, 215, 0, 0.05);
+    border-left: 4px solid #ffd700;
+    padding: 15px;
+    border-radius: 0 8px 8px 0;
+}
+
+.result-note p {
+    margin: 0;
+    color: #aaa;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.result-note i {
+    color: #ffd700;
+    margin-top: 3px;
+}
+
+
+.calc-progress {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.calc-progress::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #333;
+    z-index: 1;
+}
+
+.progress-step {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.progress-dot {
+    width: 30px;
+    height: 30px;
+    background: #333;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.progress-step.active .progress-dot {
+    background: #ffd700;
+    color: #000;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+}
+
+.progress-step.completed .progress-dot {
+    background: #ffd700;
+    color: #000;
+}
+
+.progress-step.completed .progress-dot::after {
+    content: '✓';
+}
+
+.progress-label {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.progress-step.active .progress-label {
+    color: #ffed99;
+}
+
+
+@media (max-width: 768px) {
+    .calc-options {
+        grid-template-columns: 1fr;
+    }
+
+    .condition-options {
+        grid-template-columns: 1fr;
+    }
+
+    .checkbox-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .result-summary {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .result-price {
+        text-align: center;
+    }
+
+    .result-actions {
+        flex-direction: column;
+    }
+
+    .result-actions .btn {
+        min-width: 100%;
+    }
+
+    .step-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .step-buttons .btn {
+        width: 100%;
+    }
 }

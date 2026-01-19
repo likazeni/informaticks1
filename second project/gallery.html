@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW i8 - Галерея</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Навигация -->
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="nav-logo">
+            <i class="fas fa-bolt"></i> BMW <span>i8</span>
+        </a>
+        <button class="nav-toggle" id="navToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+            <li class="nav-item"><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Главная</a></li>
+            <li class="nav-item"><a href="gallery.html" class="nav-link active"><i class="fas fa-images"></i> Галерея</a></li>
+            <li class="nav-item"><a href="technologies.html" class="nav-link"><i class="fas fa-cogs"></i> Технологии</a></li>
+            <li class="nav-item"><a href="testdrive.html" class="nav-link"><i class="fas fa-tachometer-alt"></i> Тест-драйв</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Галерея -->
+<main id="galleryPage" class="page active">
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Галерея BMW i8</h1>
+            <p class="page-subtitle">Исследуйте революционный дизайн и инновационные технологии в деталях</p>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="container">
+            <div class="gallery-controls">
+                <button class="filter-btn active" data-filter="all">Все изображения</button>
+                <button class="filter-btn" data-filter="exterior">Экстерьер</button>
+                <button class="filter-btn" data-filter="interior">Интерьер</button>
+                <button class="filter-btn" data-filter="details">Детали</button>
+                <button class="filter-btn" data-filter="performance">Динамика</button>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Экстерьер -->
+                <div class="gallery-item" data-category="exterior">
+                    <img src="https://avatars.mds.yandex.net/get-entity_search/5393129/1237539624/S600xU_2x" alt="BMW i8 вид сбоку">
+                    <div class="gallery-item-overlay">
+                        <h3>Футуристичный профиль</h3>
+                        <p>Аэродинамические линии и спортивный силуэт</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="exterior">
+                    <img src="https://avatars.mds.yandex.net/i?id=24a832d040e02e30f6cd94b1e95f8420_l-16418177-images-thumbs&n=13" alt="BMW i8 спереди">
+                    <div class="gallery-item-overlay">
+                        <h3>Характерная решетка радиатора</h3>
+                        <p>Узнаваемая решетка с синими акцентами</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="exterior">
+                    <img src="https://avatars.mds.yandex.net/i?id=90c60194287bbe8245e47c8ca4647c6571979735-12811218-images-thumbs&n=13" alt="BMW i8 сзади">
+                    <div class="gallery-item-overlay">
+                        <h3>Светодиодная оптика</h3>
+                        <p>Современные задние фонари в форме буквы L</p>
+                    </div>
+                </div>
+
+                <!-- Интерьер -->
+                <div class="gallery-item" data-category="interior">
+                    <img src="https://avatars.mds.yandex.net/i?id=9e56a8a46adc31a6638e92396a13c879_l-5288772-images-thumbs&n=13" alt="Интерьер BMW i8">
+                    <div class="gallery-item-overlay">
+                        <h3>Кокпит водителя</h3>
+                        <p>Эргономичное расположение элементов управления</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="interior">
+                    <img src="https://a.d-cd.net/ca7d536s-960.jpg" alt="Приборная панель BMW i8">
+                    <div class="gallery-item-overlay">
+                        <h3>Цифровая приборная панель</h3>
+                        <p>Полностью цифровая информационная система</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="interior">
+                    <img src="https://avatars.mds.yandex.net/i?id=261c920a99478bbf3003f370e56b3eb5_l-5299366-images-thumbs&n=13" alt="Салон BMW i8">
+                    <div class="gallery-item-overlay">
+                        <h3>Премиальный салон</h3>
+                        <p>Качественные материалы и отделка карбоном</p>
+                    </div>
+                </div>
+
+                <!-- Детали -->
+                <div class="gallery-item" data-category="details">
+                    <img src="https://avatars.mds.yandex.net/i?id=24e1163350365b509cf189dfc2ae9983eff24bb7-11401793-images-thumbs&n=13" alt="Дверь BMW i8">
+                    <div class="gallery-item-overlay">
+                        <h3>Двери "крыло бабочки"</h3>
+                        <p>Эффектные двери, открывающиеся вверх</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="details">
+                    <img src="https://avatars.mds.yandex.net/i?id=e94fce52b8c5fe5e4d0a5a64938b96c3_l-5225975-images-thumbs&n=13" alt="Фара BMW i8">
+                    <div class="gallery-item-overlay">
+                        <h3>Лазерные фары</h3>
+                        <p>Передовая светодиодная и лазерная технология</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="details">
+                    <img src="https://avatars.mds.yandex.net/i?id=92e555ce4a5c5b8a6ad20010920364c9_l-3381135-images-thumbs&n=13" alt="Колесо BMW i8">
+                    <div class="gallery-item-overlay">
+                        <h3>Легкосплавные диски</h3>
+                        <p>Аэродинамические диски специальной конструкции</p>
+                    </div>
+                </div>
+
+                <!-- Динамика -->
+                <div class="gallery-item" data-category="performance">
+                    <img src="https://avatars.mds.yandex.net/i?id=f098de58df4484dac6452b2feca6910715779e44-9181437-images-thumbs&n=13" alt="BMW i8 в движении">
+                    <div class="gallery-item-overlay">
+                        <h3>Динамика на дороге</h3>
+                        <p>Спортивный характер и отличная управляемость</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="performance">
+                    <img src="https://avatars.mds.yandex.net/i?id=f4677b975af29857b3f35fbdff6e0551dc88a9bd-4837721-images-thumbs&n=13" alt="BMW i8 на треке">
+                    <div class="gallery-item-overlay">
+                        <h3>На гоночном треке</h3>
+                        <p>Идеальный баланс мощности и сцепления</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="performance">
+                    <img src="https://avatars.mds.yandex.net/i?id=de86ee614f420b837c1e34eb26351039560213d9-7710221-images-thumbs&n=13" alt="BMW i8 ночью">
+                    <div class="gallery-item-overlay">
+                        <h3>Ночная динамика</h3>
+                        <p>Эффектное освещение в темное время суток</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-section">
+        <div class="container">
+            <div class="tech-features" style="padding-top: 80px;">
+                <div class="container">
+                    <h2 class="section-title">Ключевые особенности дизайна</h2>
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <h3><i class="fas fa-wind"></i> Аэродинамика</h3>
+                            <p>Коэффициент лобового сопротивления всего 0.26 благодаря активным воздухозаборникам, плоскому днищу и интегрированному спойлеру.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3><i class="fas fa-palette"></i> Материалы</h3>
+                            <p>Использование карбона, алюминия и переработанных материалов делает i8 легким (всего 1485 кг) и экологичным.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3><i class="fas fa-lightbulb"></i> Световые технологии</h3>
+                            <p>Лазерные фары с дальностью освещения до 600 метров и полностью светодиодная оптическая система.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Футер -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-bolt"></i> BMW <span>i8</span>
+            </div>
+            <p class="footer-text">Революционный гибридный спорткар, сочетающий в себе динамику, эффективность и инновационные технологии.</p>
+            <div class="footer-links">
+                <a href="index.html">Главная</a>
+                <a href="gallery.html">Галерея</a>
+                <a href="technologies.html">Технологии</a>
+                <a href="testdrive.html">Тест-драйв</a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p class="footer-copyright">© 2023 BMW i8 Project. Все права защищены. Это демонстрационный проект.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

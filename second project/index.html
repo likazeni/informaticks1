@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMW i8 - Главная</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Навигация -->
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <i class="fas fa-bolt"></i> BMW <span>i8</span>
+    </a>
+    <button class="nav-toggle" id="navToggle">
+      <i class="fas fa-bars"></i>
+    </button>
+    <ul class="nav-menu" id="navMenu">
+      <li class="nav-item"><a href="index.html" class="nav-link active"><i class="fas fa-home"></i> Главная</a></li>
+      <li class="nav-item"><a href="gallery.html" class="nav-link"><i class="fas fa-images"></i> Галерея</a></li>
+      <li class="nav-item"><a href="technologies.html" class="nav-link"><i class="fas fa-cogs"></i> Технологии</a></li>
+      <li class="nav-item"><a href="testdrive.html" class="nav-link"><i class="fas fa-tachometer-alt"></i> Тест-драйв</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Главная страница -->
+<main id="homePage" class="page active">
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">BMW i8</h1>
+      <p class="hero-subtitle">Спортивный автомобиль будущего</p>
+      <p class="hero-text">Инновационный гибридный спорткар с революционным дизайном и выдающейся эффективностью. Сочетание электромотора и бензинового двигателя создает уникальные динамические характеристики.</p>
+      <a href="gallery.html" class="btn-primary">Исследовать</a>
+    </div>
+    <div class="hero-car">
+      <img src="https://avatars.mds.yandex.net/get-entity_search/5393129/1237539624/S600xU_2x" alt="BMW i8 - спортивный автомобиль будущего">
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="container">
+      <h2 class="section-title">Ключевые особенности</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <h3 class="feature-title">Гибридная силовая установка</h3>
+          <p class="feature-text">Сочетание бензинового двигателя TwinPower Turbo и электромотора обеспечивает мощность 374 л.с. и разгон до 100 км/ч за 4,4 секунды с мгновенным откликом.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-leaf"></i>
+          </div>
+          <h3 class="feature-title">Экологичность</h3>
+          <p class="feature-text">Расход топлива всего 2,1 л/100 км, выбросы CO2 - 49 г/км. Возможность движения на чистой электротяге до 37 км без вредных выбросов.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-tachometer-alt"></i>
+          </div>
+          <h3 class="feature-title">Инновационный дизайн</h3>
+          <p class="feature-text">Карбоновая клетка кузова, двери типа "крыло бабочки" и аэродинамический профиль создают уникальный облик автомобиля будущего.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="specs">
+    <div class="container">
+      <h2 class="section-title">Технические характеристики</h2>
+      <div class="specs-grid">
+        <div class="spec-item">
+          <div class="spec-value">4.4 сек</div>
+          <div class="spec-label">0-100 км/ч</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-value">250 км/ч</div>
+          <div class="spec-label">Макс. скорость</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-value">374 л.с.</div>
+          <div class="spec-label">Мощность</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-value">2.1 л/100км</div>
+          <div class="spec-label">Расход топлива</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-value">37 км</div>
+          <div class="spec-label">Запас хода на EV</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-value">49 г/км</div>
+          <div class="spec-label">Выбросы CO₂</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-value">1485 кг</div>
+          <div class="spec-label">Масса</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-value">11.6 кВт·ч</div>
+          <div class="spec-label">Батарея</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Футер -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <i class="fas fa-bolt"></i> BMW <span>i8</span>
+      </div>
+      <p class="footer-text">Революционный гибридный спорткар, сочетающий в себе динамику, эффективность и инновационные технологии. Автомобиль, опередивший своё время.</p>
+      <div class="footer-links">
+        <a href="index.html">Главная</a>
+        <a href="gallery.html">Галерея</a>
+        <a href="technologies.html">Технологии</a>
+        <a href="testdrive.html">Тест-драйв</a>
+      </div>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+      <p class="footer-copyright">© 2023 BMW i8 Project. Все права защищены. Это демонстрационный проект.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

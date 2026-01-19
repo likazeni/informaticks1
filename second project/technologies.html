@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW i8 - Технологии</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Навигация -->
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="nav-logo">
+            <i class="fas fa-bolt"></i> BMW <span>i8</span>
+        </a>
+        <button class="nav-toggle" id="navToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+            <li class="nav-item"><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Главная</a></li>
+            <li class="nav-item"><a href="gallery.html" class="nav-link"><i class="fas fa-images"></i> Галерея</a></li>
+            <li class="nav-item"><a href="technologies.html" class="nav-link active"><i class="fas fa-cogs"></i> Технологии</a></li>
+            <li class="nav-item"><a href="testdrive.html" class="nav-link"><i class="fas fa-tachometer-alt"></i> Тест-драйв</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Технологии -->
+<main id="technologiesPage" class="page active">
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Технологии BMW i8</h1>
+            <p class="page-subtitle">Революционные инженерные решения для автомобиля будущего</p>
+        </div>
+    </section>
+
+    <section class="tech-hero">
+        <div class="container">
+            <div class="tech-hero-content">
+                <h2>Инновационная силовая установка</h2>
+                <p>BMW i8 сочетает в себе бензиновый двигатель и электромотор, создавая уникальный гибридный спорткар с выдающейся эффективностью и динамикой. Это симбиоз мощности и экологичности.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="tech-details">
+        <div class="container">
+            <h2 class="section-title">Ключевые технологии</h2>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-car-battery"></i>
+                    </div>
+                    <h3>Гибридная трансмиссия</h3>
+                    <p>1.5-литровый бензиновый двигатель TwinPower Turbo (231 л.с.) на задней оси и электромотор (143 л.с.) на передней оси обеспечивают полный привод и суммарную мощность 374 л.с.</p>
+                    <div class="tech-specs">
+                        <p><strong>0-100 км/ч:</strong> 4.4 сек</p>
+                        <p><strong>Макс. скорость:</strong> 250 км/ч</p>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-weight-hanging"></i>
+                    </div>
+                    <h3>Карбоновый кузов</h3>
+                    <p>Использование карбонового волокна в конструкции кузова (LifeDrive architecture) снижает массу автомобиля до 1485 кг, что улучшает динамику и эффективность.</p>
+                    <div class="tech-specs">
+                        <p><strong>Карбоновая клетка:</strong> 170 кг</p>
+                        <p><strong>Жесткость кузова:</strong> +50%</p>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-charging-station"></i>
+                    </div>
+                    <h3>Электрическая тяга</h3>
+                    <p>Литий-ионный аккумулятор емкостью 11.6 кВт·ч заряжается за 3 часа от домашней розетки. Доступны режимы: полностью электрический (до 120 км/ч), гибридный и спортивный.</p>
+                    <div class="tech-specs">
+                        <p><strong>Запас хода на EV:</strong> 37 км</p>
+                        <p><strong>Зарядка:</strong> 3 часа (220В)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tech-scheme">
+        <div class="container">
+            <h2 class="section-title">Схема гибридной силовой установки</h2>
+            <p class="page-subtitle" style="text-align: center; margin-bottom: 60px;">Инновационная архитектура eDrive обеспечивает оптимальное распределение мощности</p>
+
+            <div class="scheme-container">
+                <div class="scheme-item engine">
+                    <i class="fas fa-gas-pump"></i>
+                    <h4>Бензиновый двигатель</h4>
+                    <p>1.5 л, 231 л.с.</p>
+                    <p class="scheme-desc">Приводит задние колеса</p>
+                    <div class="scheme-stats">
+                        <p><i class="fas fa-tachometer-alt"></i> 5800 об/мин</p>
+                        <p><i class="fas fa-bolt"></i> 320 Н·м</p>
+                    </div>
+                </div>
+
+                <div class="scheme-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+
+                <div class="scheme-item battery">
+                    <i class="fas fa-car-battery"></i>
+                    <h4>Аккумулятор</h4>
+                    <p>11.6 кВт·ч</p>
+                    <p class="scheme-desc">Литий-ионный</p>
+                    <div class="scheme-stats">
+                        <p><i class="fas fa-bolt"></i> 7.1 кВт/ч на 100 км</p>
+                        <p><i class="fas fa-leaf"></i> 0 выхлопа</p>
+                    </div>
+                </div>
+
+                <div class="scheme-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+
+                <div class="scheme-item motor">
+                    <i class="fas fa-bolt"></i>
+                    <h4>Электромотор</h4>
+                    <p>143 л.с.</p>
+                    <p class="scheme-desc">Приводит передние колеса</p>
+                    <div class="scheme-stats">
+                        <p><i class="fas fa-tachometer-alt"></i> Мгновенный крутящий момент</p>
+                        <p><i class="fas fa-bolt"></i> 250 Н·м</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tech-info" style="text-align: center; margin-top: 50px; padding: 30px; background: var(--card-bg); border-radius: 15px; border: 1px solid var(--border-color);">
+                <h3 style="color: var(--text-light); margin-bottom: 15px;">Интеллектуальное управление энергией</h3>
+                <p style="color: var(--text-gray); max-width: 800px; margin: 0 auto; line-height: 1.7;">Система самостоятельно выбирает оптимальный режим работы, перераспределяя энергию между двигателем и электромотором для максимальной эффективности. В городском цикле преимущественно используется электротяга, на трассе подключается бензиновый двигатель.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="tech-features">
+        <div class="container">
+            <h2 class="section-title">Дополнительные технологии</h2>
+            <div class="features-list">
+                <div class="feature-item">
+                    <h3><i class="fas fa-wind"></i> Аэродинамические решения</h3>
+                    <p>Активные воздухозаборники, плоское днище и интегрированный спойлер снижают коэффициент лобового сопротивления до 0.26. Система Air Curtain направляет воздух вдоль колесных арок для уменьшения турбулентности.</p>
+                    <div class="feature-stats">
+                        <span><i class="fas fa-tachometer-alt"></i> Cx: 0.26</span>
+                        <span><i class="fas fa-compress-arrows-alt"></i> Прижимная сила +50%</span>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <h3><i class="fas fa-lightbulb"></i> Осветительные системы</h3>
+                    <p>Полностью светодиодная оптика с лазерными фарами (дальность освещения до 600 метров). Адаптивные фары поворачивают в поворотах, а лазерная технология обеспечивает в 10 раз больше света при вдвое меньшем энергопотреблении.</p>
+                    <div class="feature-stats">
+                        <span><i class="fas fa-sun"></i> Дальность: 600 м</span>
+                        <span><i class="fas fa-bolt"></i> -50% энергии</span>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <h3><i class="fas fa-microchip"></i> Умные системы и безопасность</h3>
+                    <p>Адаптивная подвеска, система рекуперативного торможения с КПД до 90%, помощь при парковке и навигация с учетом рельефа местности. Система eDrive Sounds создает уникальное звуковое сопровождение для электромотора.</p>
+                    <div class="feature-stats">
+                        <span><i class="fas fa-recycle"></i> Рекуперация 90%</span>
+                        <span><i class="fas fa-robot"></i> Автономный уровень 2</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="specs" style="margin-top: 0;">
+        <div class="container">
+            <h2 class="section-title">Технические характеристики</h2>
+            <div class="specs-grid">
+                <div class="spec-item">
+                    <div class="spec-value">4.4 сек</div>
+                    <div class="spec-label">0-100 км/ч</div>
+                    <div class="spec-desc">Спортивная динамика</div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-value">2.1 л/100км</div>
+                    <div class="spec-label">Расход топлива</div>
+                    <div class="spec-desc">Экологичность</div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-value">49 г/км</div>
+                    <div class="spec-label">Выбросы CO₂</div>
+                    <div class="spec-desc">Евро-6 стандарт</div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-value">37 км</div>
+                    <div class="spec-label">Запас хода на EV</div>
+                    <div class="spec-desc">Городской режим</div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-value">1485 кг</div>
+                    <div class="spec-label">Масса</div>
+                    <div class="spec-desc">Карбоновая конструкция</div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-value">374 л.с.</div>
+                    <div class="spec-label">Суммарная мощность</div>
+                    <div class="spec-desc">eDrive система</div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-value">11.6 кВт·ч</div>
+                    <div class="spec-label">Ёмкость батареи</div>
+                    <div class="spec-desc">Литий-ионная</div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-value">250 км/ч</div>
+                    <div class="spec-label">Макс. скорость</div>
+                    <div class="spec-desc">Электроограничение</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Футер -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-bolt"></i> BMW <span>i8</span>
+            </div>
+            <p class="footer-text">Революционный гибридный спорткар, сочетающий в себе динамику, эффективность и инновационные технологии.</p>
+            <div class="footer-links">
+                <a href="index.html">Главная</a>
+                <a href="gallery.html">Галерея</a>
+                <a href="technologies.html">Технологии</a>
+                <a href="testdrive.html">Тест-драйв</a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p class="footer-copyright">© 2023 BMW i8 Project. Все права защищены. Это демонстрационный проект.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

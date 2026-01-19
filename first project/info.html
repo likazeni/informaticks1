@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-<!-- Шапка -->
+
 <header class="main-header">
   <div class="logo">
     <a href="index.html">
@@ -29,19 +29,19 @@
   </nav>
 </header>
 
-<!-- Основной контент -->
+
 <main class="info-page">
   <section class="page-header">
     <h1>История <span class="highlight">BMW E34</span></h1>
     <p class="page-subtitle">1988–1996: Эпоха инженерного совершенства</p>
   </section>
 
-  <!-- Хронология -->
+  
   <section class="timeline-section">
     <h2 class="section-title">Хронология <span class="highlight">развития</span></h2>
 
     <div class="timeline">
-      <!-- Пункт 1 -->
+      
       <div class="timeline-item">
         <div class="timeline-year">1987</div>
         <div class="timeline-content offset-left">
@@ -51,7 +51,7 @@
         </div>
       </div>
 
-      <!-- Пункт 2 -->
+      
       <div class="timeline-item">
         <div class="timeline-year">1988</div>
         <div class="timeline-content offset-right">
@@ -65,7 +65,7 @@
         </div>
       </div>
 
-      <!-- Пункт 3 -->
+      
       <div class="timeline-item">
         <div class="timeline-year">1990</div>
         <div class="timeline-content offset-left">
@@ -84,7 +84,7 @@
         </div>
       </div>
 
-      <!-- Пункт 4 -->
+      
       <div class="timeline-item">
         <div class="timeline-year">1992</div>
         <div class="timeline-content offset-right">
@@ -94,7 +94,7 @@
         </div>
       </div>
 
-      <!-- Пункт 5 -->
+      
       <div class="timeline-item">
         <div class="timeline-year">1996</div>
         <div class="timeline-content offset-left">
@@ -106,7 +106,7 @@
     </div>
   </section>
 
-  <!-- Технические характеристики -->
+  
   <section class="specs-section">
     <h2 class="section-title">Технические <span class="highlight">характеристики</span></h2>
 
@@ -118,7 +118,7 @@
       </div>
 
       <div class="tabs-content">
-        <!-- Вкладка двигатели -->
+        
         <div class="tab-pane active" id="engines">
           <div class="specs-table">
             <div class="specs-row header">
@@ -170,7 +170,7 @@
           </div>
         </div>
 
-        <!-- Вкладка габариты -->
+        
         <div class="tab-pane" id="dimensions">
           <div class="dimensions-grid">
             <div class="dimension-card">
@@ -200,7 +200,7 @@
           </div>
         </div>
 
-        <!-- Вкладка особенности -->
+        
         <div class="tab-pane" id="features">
           <ul class="features-list">
             <li><i class="fas fa-check-circle"></i> Многорычажная задняя подвеска (Z-образные рычаги)</li>
@@ -217,7 +217,7 @@
     </div>
   </section>
 
-  <!-- Интересные факты -->
+  
   <section class="facts-section">
     <h2 class="section-title">Интересные <span class="highlight">факты</span></h2>
 
@@ -245,7 +245,7 @@
     </div>
   </section>
 
-  <!-- Источники -->
+  
   <section class="sources-section">
     <div class="sources-card">
       <h3><i class="fas fa-book-open"></i> Источники и литература</h3>
@@ -259,7 +259,7 @@
   </section>
 </main>
 
-<!-- Подвал -->
+
 <footer class="main-footer">
   <div class="footer-content">
     <div class="footer-logo">
@@ -286,7 +286,7 @@
 </footer>
 
 <script>
-  // Табы на странице информации
+
   document.addEventListener('DOMContentLoaded', function() {
     const tabBtns = document.querySelectorAll('.tab-btn');
     const tabPanes = document.querySelectorAll('.tab-pane');
@@ -295,11 +295,11 @@
       btn.addEventListener('click', function() {
         const tabId = this.getAttribute('data-tab');
 
-        // Убираем активный класс у всех кнопок и панелей
+
         tabBtns.forEach(b => b.classList.remove('active'));
         tabPanes.forEach(p => p.classList.remove('active'));
 
-        // Добавляем активный класс текущей кнопке и соответствующей панели
+
         this.classList.add('active');
         document.getElementById(tabId).classList.add('active');
       });

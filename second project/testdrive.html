@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW i8 - Тест-драйв</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Навигация -->
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="nav-logo">
+            <i class="fas fa-bolt"></i> BMW <span>i8</span>
+        </a>
+        <button class="nav-toggle" id="navToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+            <li class="nav-item"><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Главная</a></li>
+            <li class="nav-item"><a href="gallery.html" class="nav-link"><i class="fas fa-images"></i> Галерея</a></li>
+            <li class="nav-item"><a href="technologies.html" class="nav-link"><i class="fas fa-cogs"></i> Технологии</a></li>
+            <li class="nav-item"><a href="testdrive.html" class="nav-link active"><i class="fas fa-tachometer-alt"></i> Тест-драйв</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Тест-драйв -->
+<main id="testDrivePage" class="page active">
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Запись на тест-драйв BMW i8</h1>
+            <p class="page-subtitle">Ощутите мощь и инновации за рулем автомобиля будущего</p>
+        </div>
+    </section>
+
+    <section class="testdrive-form-section">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-info">
+                    <h2>Забронируйте тест-драйв</h2>
+                    <p>Заполните форму, и наш менеджер свяжется с вами для подтверждения даты и времени тест-драйва BMW i8. Мы предлагаем индивидуальный подход и профессиональное сопровождение.</p>
+
+                    <div class="info-points">
+                        <div class="info-point">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Продолжительность: 60 минут</h4>
+                                <p>Достаточно времени, чтобы оценить все возможности автомобиля</p>
+                            </div>
+                        </div>
+                        <div class="info-point">
+                            <i class="fas fa-route"></i>
+                            <div>
+                                <h4>Маршрут: город и трасса</h4>
+                                <p>Тестирование в различных дорожных условиях</p>
+                            </div>
+                        </div>
+                        <div class="info-point">
+                            <i class="fas fa-id-card"></i>
+                            <div>
+                                <h4>Требования: водительские права категории B</h4>
+                                <p>Стаж вождения не менее 3 лет</p>
+                            </div>
+                        </div>
+                        <div class="info-point">
+                            <i class="fas fa-user-tie"></i>
+                            <div>
+                                <h4>Сопровождение: профессиональный инструктор</h4>
+                                <p>Опытный специалист ответит на все ваши вопросы</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testdrive-car">
+                        <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="BMW i8 для тест-драйва">
+                        <div class="car-overlay">
+                            <h4>Готов к тест-драйву</h4>
+                            <p>Полностью заправлен и подготовлен</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="testdrive-form" id="testDriveForm">
+                    <h3>Форма записи</h3>
+                    <p style="color: var(--text-gray); margin-bottom: 30px; text-align: center;">Заполните все обязательные поля (*)</p>
+
+                    <div class="form-group">
+                        <label for="fullName">ФИО *</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Иванов Иван Иванович" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Телефон *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+7 (999) 123-45-67" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" placeholder="example@mail.ru" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="preferredDate">Предпочтительная дата *</label>
+                            <input type="date" id="preferredDate" name="preferredDate" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="preferredTime">Время *</label>
+                            <select id="preferredTime" name="preferredTime" required>
+                                <option value="">Выберите время</option>
+                                <option value="10:00">10:00 - 11:00</option>
+                                <option value="12:00">12:00 - 13:00</option>
+                                <option value="14:00">14:00 - 15:00</option>
+                                <option value="16:00">16:00 - 17:00</option>
+                                <option value="18:00">18:00 - 19:00</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="drivingExperience">Стаж вождения (лет) *</label>
+                        <div class="experience-select">
+                            <select id="drivingExperience" name="drivingExperience" required>
+                                <option value="">Выберите стаж</option>
+                                <option value="1-3">1-3 года</option>
+                                <option value="3-5">3-5 лет</option>
+                                <option value="5-10">5-10 лет</option>
+                                <option value="10+">Более 10 лет</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="location">Предпочтительное место тест-драйва</label>
+                        <select id="location" name="location">
+                            <option value="">Выберите место</option>
+                            <option value="center">Центральный офис BMW</option>
+                            <option value="north">Северный дилерский центр</option>
+                            <option value="south">Южный дилерский центр</option>
+                            <option value="custom">Другое (уточним при звонке)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comments">Дополнительные пожелания</label>
+                        <textarea id="comments" name="comments" rows="3" placeholder="Особые пожелания к маршруту или автомобилю..."></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+                        <label for="agreeTerms">Я согласен на обработку персональных данных и ознакомлен с политикой конфиденциальности</label>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Я хочу получать информацию о новых моделях и специальных предложениях</label>
+                    </div>
+
+                    <button type="submit" class="btn-primary" style="width: 100%; padding: 18px; font-size: 1.1rem;">
+                        <i class="fas fa-paper-plane"></i> Отправить заявку
+                    </button>
+
+                    <p style="text-align: center; margin-top: 20px; color: var(--text-gray); font-size: 0.9rem;">
+                        Мы свяжемся с вами в течение 2 часов в рабочее время
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Отзывы о тест-драйве</h2>
+            <p class="page-subtitle" style="text-align: center; margin-bottom: 60px;">Что говорят наши клиенты после знакомства с BMW i8</p>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="testimonial-author">
+                            <h4>Александр Иванов</h4>
+                            <p>Автожурналист, стаж вождения 15 лет</p>
+                            <p class="testimonial-date">25 октября 2023</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">Невероятные ощущения! BMW i8 сочетает в себе спортивную динамику и экологичность. Переход с электротяги на бензиновый двигатель практически незаметен. Управление точное, отзывчивое. Особенно впечатлила тишина в электрическом режиме.</p>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span style="margin-left: 10px; color: var(--text-light);">5.0</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="testimonial-author">
+                            <h4>Мария Смирнова</h4>
+                            <p>IT-директор, новая владелица BMW i8</p>
+                            <p class="testimonial-date">18 ноября 2023</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">Тест-драйв полностью изменил мое представление о гибридных автомобилях. Динамика, дизайн и технологии превзошли все ожидания. Особенно понравилась система рекуперативного торможения. Купила через неделю после тест-драйва и не жалею!</p>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span style="margin-left: 10px; color: var(--text-light);">4.5</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="testimonial-author">
+                            <h4>Дмитрий Петров</h4>
+                            <p>Предприниматель, автолюбитель</p>
+                            <p class="testimonial-date">5 декабря 2023</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">Организация тест-драйва на высшем уровне. Инструктор подробно объяснил все особенности управления. Автомобиль поразил сочетанием комфорта и спортивного характера. Двери "крыло бабочки" вызывают восторг у всех окружающих.</p>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span style="margin-left: 10px; color: var(--text-light);">5.0</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="testimonial-author">
+                            <h4>Ольга Козлова</h4>
+                            <p>Архитектор, первое знакомство с BMW</p>
+                            <p class="testimonial-date">12 декабря 2023</p>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">Как человек далекий от автомобилей, я была приятно удивлена простотой управления и понятным интерфейсом. Дизайн просто космический! Теперь рассматриваю i8 как вариант для следующего автомобиля. Спасибо за профессиональный подход.</p>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span style="margin-left: 10px; color: var(--text-light);">5.0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section" style="padding: 100px 0; background: var(--dark-gradient);">
+        <div class="container">
+            <h2 class="section-title">Часто задаваемые вопросы</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3><i class="fas fa-question-circle"></i> Нужен ли специальный опыт для тест-драйва BMW i8?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Нет, специальный опыт не требуется. Наш инструктор подробно объяснит все особенности управления перед началом тест-драйва. Единственное требование - наличие водительских прав категории B и стаж вождения не менее 3 лет.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3><i class="fas fa-question-circle"></i> Что входит в программу тест-драйва?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Тест-драйв длится 60 минут и включает: знакомство с автомобилем и его особенностями, тестирование в городском цикле, выезд на трассу, проверку различных режимов движения (электрический, гибридный, спортивный), а также ответы на все ваши вопросы.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3><i class="fas fa-question-circle"></i> Нужна ли страховка или залог?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Нет, дополнительная страховка или залог не требуются. Автомобиль застрахован по полной программе КАСКО. Все что нужно - это ваш паспорт и водительское удостоверение для оформления документов.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3><i class="fas fa-question-circle"></i> Можно ли приехать с семьей или друзьями?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, конечно! BMW i8 имеет 4 места (2+2). Вы можете взять с собой до 3 пассажиров. Однако помните, что за рулем во время тест-драйва можете быть только вы как основной водитель.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-info" style="text-align: center; margin-top: 60px; padding: 40px; background: var(--card-bg); border-radius: 15px; border: 1px solid var(--border-color);">
+                <h3 style="color: var(--text-light); margin-bottom: 20px;">Остались вопросы?</h3>
+                <p style="color: var(--text-gray); margin-bottom: 25px; max-width: 600px; margin-left: auto; margin-right: auto;">Свяжитесь с нами напрямую, и мы с радостью ответим на все ваши вопросы</p>
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <i class="fas fa-phone"></i>
+                        <h4>Телефон</h4>
+                        <p>+7 (495) 123-45-67</p>
+                    </div>
+                    <div class="contact-method">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email</h4>
+                        <p>testdrive@bmw-i8.ru</p>
+                    </div>
+                    <div class="contact-method">
+                        <i class="fas fa-clock"></i>
+                        <h4>Часы работы</h4>
+                        <p>Пн-Пт: 9:00-21:00</p>
+                        <p>Сб-Вс: 10:00-20:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Футер -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-bolt"></i> BMW <span>i8</span>
+            </div>
+            <p class="footer-text">Революционный гибридный спорткар, сочетающий в себе динамику, эффективность и инновационные технологии.</p>
+            <div class="footer-links">
+                <a href="index.html">Главная</a>
+                <a href="gallery.html">Галерея</a>
+                <a href="technologies.html">Технологии</a>
+                <a href="testdrive.html">Тест-драйв</a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p class="footer-copyright">© 2023 BMW i8 Project. Все права защищены. Это демонстрационный проект.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
