@@ -1,0 +1,925 @@
+/* Основные стили для BMW M8 Prototype */
+:root {
+    --primary-dark: #0a0a0a;
+    --primary-red: #dc0000;
+    --accent-red: #ff2a2a;
+    --dark-bg: #111111;
+    --card-bg: rgba(255, 255, 255, 0.05);
+    --text-light: #ffffff;
+    --text-gray: #b0b0b0;
+    --border-color: rgba(255, 255, 255, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--text-light);
+    background-color: var(--primary-dark);
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Навигация */
+.navbar {
+    background-color: rgba(10, 10, 10, 0.95);
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-logo {
+    color: var(--text-light);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.m8-text {
+    color: var(--primary-red);
+}
+
+.nav-toggle {
+    background: none;
+    border: none;
+    color: var(--text-light);
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav-item {
+    margin-left: 30px;
+}
+
+.nav-link {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 0;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--primary-red);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary-red);
+    transition: width 0.3s;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+/* Герой-секция */
+.hero-section {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    margin-top: 60px;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(10,10,10,0.9) 0%, rgba(10,10,10,0.6) 100%);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+    padding: 0 40px;
+}
+
+.hero-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #ffffff, var(--primary-red));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: var(--text-gray);
+    margin-bottom: 30px;
+}
+
+.hero-text {
+    font-size: 1.1rem;
+    color: var(--text-gray);
+    margin-bottom: 40px;
+    line-height: 1.8;
+}
+
+/* Кнопки */
+.btn-primary {
+    display: inline-block;
+    background: linear-gradient(90deg, var(--primary-red), var(--accent-red));
+    color: white;
+    padding: 15px 35px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(220, 0, 0, 0.3);
+}
+
+/* Заголовки секций */
+.section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-red), var(--accent-red));
+}
+
+.page-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.page-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-gray);
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+/* Карточки особенностей */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.feature-card {
+    background: var(--card-bg);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s;
+    border: 1px solid var(--border-color);
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-red);
+    box-shadow: 0 15px 30px rgba(220, 0, 0, 0.2);
+}
+
+.feature-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.feature-content {
+    padding: 25px;
+}
+
+.feature-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.feature-content h3 i {
+    color: var(--primary-red);
+}
+
+/* Спецификации */
+.specs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.spec-card {
+    background: var(--card-bg);
+    padding: 30px 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s;
+}
+
+.spec-card:hover {
+    border-color: var(--primary-red);
+    transform: translateY(-5px);
+}
+
+.spec-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-red);
+    margin-bottom: 10px;
+}
+
+.spec-label {
+    color: var(--text-gray);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Галерея */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 250px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+
+/* Контентные секции */
+.content-section {
+    padding: 80px 0;
+}
+
+.content-section.dark {
+    background: var(--dark-bg);
+}
+
+.content-block {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.content-block.reverse {
+    flex-direction: row-reverse;
+}
+
+.content-image-left,
+.content-image-right {
+    flex: 1;
+}
+
+.content-image-left img,
+.content-image-right img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.content-image-full img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.content-text {
+    flex: 1;
+}
+
+.content-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--primary-red);
+}
+
+.content-text p {
+    color: var(--text-gray);
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.content-text-center {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Факт-бокс */
+.fact-box {
+    background: rgba(220, 0, 0, 0.1);
+    border-left: 4px solid var(--primary-red);
+    padding: 20px;
+    margin: 30px 0;
+    border-radius: 0 10px 10px 0;
+}
+
+.fact-box i {
+    color: var(--primary-red);
+    font-size: 1.5rem;
+    margin-right: 15px;
+    float: left;
+}
+
+/* Сравнение */
+.comparison {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.comparison-item {
+    background: var(--card-bg);
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+}
+
+.comparison-item h4 {
+    color: var(--primary-red);
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.comparison-item ul {
+    list-style: none;
+}
+
+.comparison-item li {
+    color: var(--text-gray);
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.comparison-item li::before {
+    content: '•';
+    color: var(--primary-red);
+    position: absolute;
+    left: 0;
+}
+
+/* Причины */
+.reasons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.reason-card {
+    text-align: center;
+    padding: 30px 20px;
+    background: var(--card-bg);
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s;
+}
+
+.reason-card:hover {
+    border-color: var(--primary-red);
+    transform: translateY(-5px);
+}
+
+.reason-card i {
+    font-size: 2.5rem;
+    color: var(--primary-red);
+    margin-bottom: 20px;
+}
+
+.reason-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.reason-card p {
+    color: var(--text-gray);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Технологии */
+.tech-section {
+    padding: 80px 0;
+}
+
+.tech-section.dark {
+    background: var(--dark-bg);
+}
+
+.tech-block {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.tech-block.reverse {
+    flex-direction: row-reverse;
+}
+
+.tech-image {
+    flex: 1;
+}
+
+.tech-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.tech-content {
+    flex: 1;
+}
+
+.tech-content h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.tech-content h2 i {
+    color: var(--primary-red);
+}
+
+/* Список характеристик */
+.specs-list {
+    margin: 30px 0;
+}
+
+.spec-item {
+    padding: 15px 0;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+.spec-item:last-child {
+    border-bottom: none;
+}
+
+/* Таблица характеристик */
+.specs-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+.specs-table th {
+    background: rgba(220, 0, 0, 0.1);
+    padding: 15px;
+    text-align: left;
+    color: var(--primary-red);
+    border: 1px solid var(--border-color);
+}
+
+.specs-table td {
+    padding: 15px;
+    border: 1px solid var(--border-color);
+    color: var(--text-gray);
+}
+
+.specs-table tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+/* Сетка особенностей */
+.features-grid-small {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.feature {
+    text-align: center;
+    padding: 20px;
+    background: var(--card-bg);
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+}
+
+.feature i {
+    font-size: 2rem;
+    color: var(--primary-red);
+    margin-bottom: 15px;
+}
+
+.feature h4 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    color: var(--text-gray);
+    font-size: 0.9rem;
+}
+
+/* Аэродинамика */
+.aero-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.aero-card {
+    background: var(--card-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+.aero-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.aero-card h3 {
+    padding: 20px 20px 10px;
+    font-size: 1.3rem;
+}
+
+.aero-card p {
+    padding: 0 20px 20px;
+    color: var(--text-gray);
+    font-size: 0.9rem;
+}
+
+/* Сравнение автомобилей */
+.comparison-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.car-card {
+    background: var(--card-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s;
+}
+
+.car-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-red);
+}
+
+.car-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.car-info {
+    padding: 20px;
+}
+
+.car-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.car-info p {
+    color: var(--text-gray);
+}
+
+/* Футер */
+.footer {
+    background: var(--dark-bg);
+    padding: 60px 0 30px;
+    margin-top: 80px;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.footer-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-text {
+    color: var(--text-gray);
+    max-width: 600px;
+    margin: 0 auto 30px;
+    line-height: 1.8;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: var(--text-gray);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--primary-red);
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.footer-social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: var(--card-bg);
+    border-radius: 50%;
+    color: var(--text-light);
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.footer-social a:hover {
+    background: var(--primary-red);
+    transform: translateY(-3px);
+}
+
+.footer-copyright {
+    color: var(--text-gray);
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .content-block {
+        flex-direction: column;
+    }
+
+    .tech-block {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: rgba(10, 10, 10, 0.98);
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        transform: translateY(-100%);
+        opacity: 0;
+        transition: all 0.3s;
+    }
+
+    .nav-menu.active {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .page-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-content {
+        padding: 0 20px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .page-title {
+        font-size: 2rem;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+.secret-card {
+    background: rgba(220, 0, 0, 0.05);
+    border: 1px solid rgba(220, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.secret-card:hover {
+    background: rgba(220, 0, 0, 0.1);
+    transform: translateX(10px);
+}
+
+.secret-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.secret-card.active .secret-content {
+    max-height: 500px;
+    margin-top: 20px;
+}
+
+.myth-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.myth-card {
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.myth-card.true {
+    background: rgba(0, 255, 0, 0.05);
+    border-color: rgba(0, 255, 0, 0.2);
+}
+
+.myth-card.false {
+    background: rgba(255, 0, 0, 0.05);
+    border-color: rgba(255, 0, 0, 0.2);
+}
+
+.myth-status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.status-true {
+    background: rgba(0, 255, 0, 0.2);
+    color: #00ff00;
+}
+
+.status-false {
+    background: rgba(255, 0, 0, 0.2);
+    color: #ff0000;
+}
+
+.document-section {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    border-radius: 10px;
+    margin: 40px 0;
+    text-align: center;
+}
